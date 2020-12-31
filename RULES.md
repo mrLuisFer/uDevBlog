@@ -15,3 +15,5 @@
 - El contenido en general lleva un 5% de padding a los lados
 
 - Porfavor agrega comentarios de tu codigo y si quieres explica un poco el como funciona
+
+- Las variables en los archivos scss seran del css normal `var(--nameOf)`
