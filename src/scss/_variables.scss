@@ -19,8 +19,23 @@
   --dark-charcoal: #2f4858;
 
   --white: #f1f1f1;
-  --dark: #0c0c0c;
+  --dark: #141313;
+
+  --shadow-color: rgba(59, 35, 35, 0.7);
 
   // CSS properties
-  --transition: 0.3s cubic-bezier(0.49, 0.28, 0.78, 0.79);
+  --transition: 0.2s cubic-bezier(0.49, 0.28, 0.78, 0.79);
+
+  // Font Families
+  // Textos, enlaces, subtitulos
+  --poppins-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  // Titutlos y referencias
+  --ibm-font: "IBM Plex Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+
+  // @weights: family=IBM:400;500;600;700
+  // @weights: family=Poppins:100;200;300;400;500;600;700;800
 }

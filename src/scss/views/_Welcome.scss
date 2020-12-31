@@ -1,3 +1,40 @@
 .WelcomeView {
   padding: 2rem 5%;
+
+  &__hero-illustration {
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+  }
+
+  &__title {
+    text-align: left;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 var(--sandy-brown);
+    transition: var(--transition);
+
+    span {
+      color: var(--sandy-brown);
+      text-shadow: 1px 1px 0px var(--shadow-color);
+      transition: var(--transition);
+    }
+
+    &:hover {
+      color: var(--sandy-brown);
+      text-shadow: 1px 1px 0 var(--shadow-color);
+
+      span {
+        color: var(--dark);
+        text-shadow: 1px 1px 0 var(--sandy-brown);
+      }
+    }
+  }
+
+  &__text {
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
 }

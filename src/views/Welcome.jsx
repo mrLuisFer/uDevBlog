@@ -18,7 +18,9 @@ export default function WelcomeView() {
         alt="welcome-blog-spot"
         className="WelcomeView__hero-illustration"
       />
-      <h1 className="WelcomeView__title">Bienvenido a uDevBlog</h1>
+      <h1 className="WelcomeView__title">
+        Bienvenido a <span>uDevBlog</span>!
+      </h1>
       {/* Line */}
       <p className="WelcomeView__text">
         En este blog estaran las tecnologias, herramientas de la programacion,
