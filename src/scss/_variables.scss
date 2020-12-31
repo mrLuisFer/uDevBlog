@@ -2,4 +2,25 @@
 :root {
   // La fuente la defino asi ya que es buena pratica usar rem que hace referencia a este valor
   font-size: 16px;
+
+  // Estas son la primera version de la paleta de colores que utilizaremos
+  // En caso sea necesario cambiar un color lo haremos desde la variable manualmente pero revisando que no afecte
+  // a otros estilos
+  --charcoal: #254653;
+  --persian-green: #2a9d8f;
+  --burnt-sienna: #f35860;
+  --sandy-brown: #ff9667;
+
+  --davys-grey: #50514f;
+  --naples-yellow: #ffe066;
+  --celadon-blue: #247ba0;
+
+  --queen-blue: #33658a;
+  --dark-charcoal: #2f4858;
+
+  --white: #f1f1f1;
+  --dark: #0c0c0c;
+
+  // CSS properties
+  --transition: 0.3s cubic-bezier(0.49, 0.28, 0.78, 0.79);
 }

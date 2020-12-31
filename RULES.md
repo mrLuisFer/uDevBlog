@@ -19,3 +19,5 @@
 - Las variables en los archivos scss seran del css normal `var(--nameOf)`
 
 - Al momento de diseñar usar `mobile first`
+
+- El diseño inicial en mobile es `#375px`
