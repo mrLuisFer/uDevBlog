@@ -11,3 +11,9 @@
 - Los archivos scss deben llevar el mismo nombre que el componente que tendra los estilos
 
 - Para componentes la extension recomendada es `.jsx`
+
+- El contenido en general lleva un 5% de padding a los lados
+
+- Porfavor agrega comentarios de tu codigo y si quieres explica un poco el como funciona
+
+- Las variables en los archivos scss seran del css normal `var(--nameOf)`
