@@ -2,6 +2,8 @@ import React from "react"
 import { useHistory } from "react-router-dom"
 // Assets
 import welcomeBlogPost from "../assets/welcome-blog-post.svg"
+// Utils
+import { fadeInUp, fadeInUpBig } from "../utils/animateCss"
 
 export default function WelcomeView() {
   let history = useHistory()
@@ -22,13 +24,16 @@ export default function WelcomeView() {
         Bienvenid@ a <span>uDevBlog!</span>
       </h1>
       {/* Optional Line */}
-      <p className="WelcomeView__text">
+      <p className={fadeInUp + " WelcomeView__text"}>
         En este blog estaran las tecnologias, herramientas de la programacion,
         asi como comunidades en español
       </p>
       <div>
         <div className="WelcomeView__btn-div">
-          <button className="WelcomeView__btn-div__btn" onClick={pushToHome}>
+          <button
+            className={fadeInUpBig + "  WelcomeView__btn-div__btn"}
+            onClick={pushToHome}
+          >
             Conozcamos a mas <br /> comunidades!🌟
           </button>
         </div>
