@@ -17,3 +17,5 @@
 - Porfavor agrega comentarios de tu codigo y si quieres explica un poco el como funciona
 
 - Las variables en los archivos scss seran del css normal `var(--nameOf)`
+
+- Al momento de diseñar usar `mobile first`
