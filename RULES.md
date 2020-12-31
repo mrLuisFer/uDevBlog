@@ -21,3 +21,5 @@
 - Al momento de diseñar usar `mobile first`
 
 - El diseño inicial en mobile es `#375px`
+
+- Las animaciones provenientes de animate.css deben ser exportadas desde `utils/animateCss/index`
