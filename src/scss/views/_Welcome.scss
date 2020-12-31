@@ -3,8 +3,10 @@
 
   &__hero-illustration {
     margin: 0 auto;
-    width: 350px;
+    // width: 350px;
+    width: 100%;
     height: auto;
+    transform: scale(1.1);
   }
 
   &__title {
@@ -52,26 +54,31 @@
       transition: var(--transition);
 
       &:hover {
-        filter: brightness(1.03);
+        filter: brightness(1.035);
         cursor: pointer;
-        box-shadow: 1px 1.4px 2px 0 var(--shadow-color);
+        // box-shadow: 1px 1.4px 2px 0 var(--shadow-color);
+        box-shadow: 0.2px 1px 3px 0 var(--shadow-color);
       }
     }
   }
 
   &__links-div {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 1rem;
-    position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
     padding-bottom: 1rem;
 
     a {
       color: var(--grey);
       text-decoration: none;
       border: var(--border-invisible);
+      font-weight: 300;
+      font-size: 0.9rem;
 
       &:hover {
         color: var(--dark-charcoal);
