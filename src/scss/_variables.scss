@@ -11,7 +11,7 @@
   --burnt-sienna: #f35860;
   --sandy-brown: #ff9667;
 
-  --davys-grey: #50514f;
+  --grey: #50514f;
   --naples-yellow: #ffe066;
   --celadon-blue: #247ba0;
 
@@ -23,9 +23,6 @@
 
   --shadow-color: rgba(59, 35, 35, 0.7);
 
-  // CSS properties
-  --transition: 0.2s cubic-bezier(0.49, 0.28, 0.78, 0.79);
-
   // Font Families
   // Textos, enlaces, subtitulos
   --poppins-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -35,7 +32,11 @@
   --ibm-font: "IBM Plex Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
-
   // @weights: family=IBM:400;500;600;700
   // @weights: family=Poppins:100;200;300;400;500;600;700;800
+
+  // CSS properties
+  --transition: 0.2s cubic-bezier(0.49, 0.28, 0.78, 0.79);
+  --radius: 9px;
+  --border-invisible: 1px solid rgba(0, 0, 0, 0);
 }

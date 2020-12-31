@@ -17,6 +17,7 @@
       color: var(--sandy-brown);
       text-shadow: 1px 1px 0px var(--shadow-color);
       transition: var(--transition);
+      display: block;
     }
 
     &:hover {
@@ -36,5 +37,46 @@
     letter-spacing: 0.5px;
     text-align: center;
     margin-top: 1.5rem;
+  }
+
+  &__btn-div {
+    display: block;
+    text-align: center;
+
+    &__btn {
+      padding: 1rem;
+      margin: 2.5rem 0;
+      border: 0;
+      border-radius: var(--radius);
+      background: var(--naples-yellow);
+      transition: var(--transition);
+
+      &:hover {
+        filter: brightness(1.03);
+        cursor: pointer;
+        box-shadow: 1px 1.4px 2px 0 var(--shadow-color);
+      }
+    }
+  }
+
+  &__links-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+
+    a {
+      color: var(--grey);
+      text-decoration: none;
+      border: var(--border-invisible);
+
+      &:hover {
+        color: var(--dark-charcoal);
+        border-bottom: 1px solid var(--charcoal);
+      }
+    }
   }
 }

@@ -19,21 +19,29 @@ export default function WelcomeView() {
         className="WelcomeView__hero-illustration"
       />
       <h1 className="WelcomeView__title">
-        Bienvenido a <span>uDevBlog</span>!
+        Bienvenid@ a <span>uDevBlog!</span>
       </h1>
-      {/* Line */}
+      {/* Optional Line */}
       <p className="WelcomeView__text">
         En este blog estaran las tecnologias, herramientas de la programacion,
         asi como comunidades en español
       </p>
       <div>
-        <button className="WelcomeView__btn" onClick={pushToHome}>
-          Vamos a conocer a mas comunidades🌟
-        </button>
-        <div className="WelcomeView__links-container">
-          <a href="/">Repositorio</a>
-          <a href="/">Conocer Mas</a>
-          <a href="/">Integrantes</a>
+        <div className="WelcomeView__btn-div">
+          <button className="WelcomeView__btn-div__btn" onClick={pushToHome}>
+            Conozcamos a mas <br /> comunidades!🌟
+          </button>
+        </div>
+        <div className="WelcomeView__links-div">
+          <a className="WelcomeView__links-div__link" href="/">
+            Repositorio
+          </a>
+          <a className="WelcomeView__links-div__link" href="/">
+            Conocer Mas
+          </a>
+          <a className="WelcomeView__links-div__link" href="/">
+            Integrantes
+          </a>
         </div>
       </div>
     </div>
