@@ -2,20 +2,57 @@
   padding: 2rem 5%;
   padding-top: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $large) {
+    // display: flex;
+    // align-items: center;
+    padding: 2% 5%;
+
+    display: grid;
+    grid-template-columns: 510px 1fr;
+    grid-template-areas:
+      "hero text"
+      "btn-links btn-links";
+    align-items: center;
   }
 
-  &__hero-illustration {
-    // width: 350px;
-    width: 100%;
-    height: auto;
-    transform: scale(1.1);
+  &__hero-illustration-div {
     background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff9770' fill-opacity='0.2'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 100%;
     background-size: auto;
     // Esto coloca al background un poco mas arriba y asi vizualizar mejor el pattern
     background-position-y: -1.4rem;
-    margin: 0 auto;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    padding-top: 2rem;
+    grid-area: hero;
+
+    @media (min-width: $large) {
+      background-image: none;
+      padding-top: 0;
+    }
+
+    &-img {
+      height: auto;
+      transform: scale(1.1);
+      margin: 0 auto;
+      margin-top: 1rem;
+
+      @media (min-width: $ipad) {
+        width: 500px;
+        height: 450px;
+      }
+
+      @media (min-width: $large) {
+        height: auto;
+        // width: 520px;
+        width: auto;
+      }
+    }
+  }
+
+  &__container {
+    grid-area: text;
   }
 
   &__title {
@@ -24,6 +61,19 @@
     text-shadow: 1px 1px 0 var(--sandy-brown);
     transition: var(--transition);
     @include no-select;
+
+    @media (min-width: $ipad) {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 0;
+    }
+
+    @media (min-width: $large) {
+      font-size: 3rem;
+      margin: 0;
+      text-align: right;
+      margin-top: 3rem;
+    }
 
     span {
       color: var(--sandy-brown);
@@ -49,6 +99,25 @@
     letter-spacing: 0.5px;
     text-align: center;
     margin-top: 1.5rem;
+
+    @media (min-width: $ipad) {
+      padding: 0 5.5rem;
+    }
+
+    @media (min-width: $large) {
+      padding: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__div__link-btn {
+    @media (min-width: $large) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: btn-links;
+    }
   }
 
   &__btn-div {
@@ -63,6 +132,17 @@
       background: var(--naples-yellow);
       transition: var(--transition);
       @include no-select;
+
+      @media (min-width: $ipad) {
+        max-width: 17rem;
+        margin-bottom: 6rem;
+      }
+
+      @media (min-width: $large) {
+        width: 14rem;
+        margin: 0;
+        margin-right: 3rem;
+      }
 
       &:hover {
         filter: brightness(1.035);
@@ -84,6 +164,14 @@
     width: 100%;
     padding-bottom: 1rem;
 
+    @media (min-width: $large) {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+    }
+
     a {
       color: var(--grey);
       text-decoration: none;
@@ -94,6 +182,16 @@
       &:hover {
         color: var(--dark-charcoal);
         border-bottom: 1px solid var(--charcoal);
+      }
+
+      @media (min-width: $large) {
+        width: 6.5rem;
+        border: none;
+
+        &:hover {
+          text-decoration: underline;
+          border: none;
+        }
       }
     }
   }

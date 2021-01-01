@@ -14,12 +14,14 @@ export default function WelcomeView() {
 
   return (
     <div className="WelcomeView">
-      {/* Hero illustration */}
-      <img
-        src={welcomeBlogPost}
-        alt="welcome-blog-spot"
-        className="WelcomeView__hero-illustration"
-      />
+      <div className="WelcomeView__hero-illustration-div">
+        {/* Hero illustration */}
+        <img
+          className="WelcomeView__hero-illustration-div-img"
+          src={welcomeBlogPost}
+          alt="welcome-blog-spot"
+        />
+      </div>
       <div className={fadeInUp + " WelcomeView__container"}>
         <h1 className="WelcomeView__title">
           Bienvenid@ a <span>uDevBlog!</span>
@@ -30,26 +32,26 @@ export default function WelcomeView() {
           Frontend y Backend y donde encontraras a comunidades, programadores y
           contenido para aprender y resolver tus dudas de manera sencilla
         </p>
-        <div>
-          <div className="WelcomeView__btn-div">
-            <button
-              className={fadeInUp + "  WelcomeView__btn-div__btn"}
-              onClick={pushToHome}
-            >
-              Conozcamos a mas <br /> comunidades!
-            </button>
-          </div>
-          <div className="WelcomeView__links-div">
-            <a className="WelcomeView__links-div__link" href="/">
-              Repositorio
-            </a>
-            <a className="WelcomeView__links-div__link" href="/">
-              Conocer Mas
-            </a>
-            <a className="WelcomeView__links-div__link" href="/">
-              Integrantes
-            </a>
-          </div>
+      </div>
+      <div className="WelcomeView__div__link-btn">
+        <div className="WelcomeView__btn-div">
+          <button
+            className={fadeInUp + "  WelcomeView__btn-div__btn"}
+            onClick={pushToHome}
+          >
+            Conozcamos a mas <br /> comunidades!
+          </button>
+        </div>
+        <div className="WelcomeView__links-div">
+          <a className="WelcomeView__links-div__link" href="/">
+            Repositorio
+          </a>
+          <a className="WelcomeView__links-div__link" href="/">
+            Conocer Mas
+          </a>
+          <a className="WelcomeView__links-div__link" href="/">
+            Integrantes
+          </a>
         </div>
       </div>
     </div>
