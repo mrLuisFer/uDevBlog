@@ -1,12 +1,21 @@
 .WelcomeView {
   padding: 2rem 5%;
+  padding-top: 0;
+
+  @media (min-width: 768px) {
+  }
 
   &__hero-illustration {
-    margin: 0 auto;
     // width: 350px;
     width: 100%;
     height: auto;
     transform: scale(1.1);
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff9770' fill-opacity='0.2'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: auto;
+    // Esto coloca al background un poco mas arriba y asi vizualizar mejor el pattern
+    background-position-y: -1.4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 
   &__title {
@@ -14,6 +23,7 @@
     font-weight: 700;
     text-shadow: 1px 1px 0 var(--sandy-brown);
     transition: var(--transition);
+    @include no-select;
 
     span {
       color: var(--sandy-brown);
@@ -52,9 +62,11 @@
       border-radius: var(--radius);
       background: var(--naples-yellow);
       transition: var(--transition);
+      @include no-select;
 
       &:hover {
         filter: brightness(1.035);
+        transform: scale(1.1);
         cursor: pointer;
         // box-shadow: 1px 1.4px 2px 0 var(--shadow-color);
         box-shadow: 0.2px 1px 3px 0 var(--shadow-color);
@@ -68,7 +80,6 @@
     align-items: center;
     justify-content: center;
     column-gap: 1rem;
-    bottom: 0;
     left: 0;
     width: 100%;
     padding-bottom: 1rem;
