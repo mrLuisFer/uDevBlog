@@ -1,18 +1,20 @@
-// normalize (css)
+//// normalize (css)
 @import "./scss/normalize";
 
-// Variables
+//// Variables
 @import "./scss/variables";
 
+//// Utils
 // Animate Css
 @import "../node_modules/animate.css/animate.min.css";
 
 // Globals
 @import "./scss/globals";
 
-// Mixins
+//// Mixins
 @import "./scss/mixins/no-select";
 
+//// Components
 // App
 @import "./scss/App";
 
