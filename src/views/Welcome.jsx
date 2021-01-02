@@ -29,8 +29,9 @@ export default function WelcomeView() {
         {/* Optional Line */}
         <p className={fadeInUp + " WelcomeView__text"}>
           Un blog en donde aprenderas sobre tecnologias de programacion para
-          Frontend y Backend y donde encontraras a comunidades, programadores y
-          contenido para aprender y resolver tus dudas de manera sencilla
+          <span> Frontend</span> y <span>Backend</span> y donde encontraras a
+          <span> comunidades</span>, programadores, contenido para aprender y
+          resolver tus dudas de manera sencilla
         </p>
       </div>
       <div className="WelcomeView__div__link-btn">
