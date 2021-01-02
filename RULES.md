@@ -23,3 +23,5 @@
 - El diseño inicial en mobile es `#375px`
 
 - Las animaciones provenientes de animate.css deben ser exportadas desde `utils/animateCss/index`
+
+- ## La rama features es como si fuera la main donde se haran los pr para revisar que caracteristicas no afectaran a la rama main
