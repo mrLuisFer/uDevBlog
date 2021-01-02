@@ -2,5 +2,5 @@
 // y hacerlas mas reutilizables
 // Solo debes poner el `animate__animated` y el nombre de la animacion
 
-export const fadeInUp = "animate__animated animate__fadeInUp animate__faster"
+export const fadeInUp = "animate__animated animate__fadeInUp animate__fast"
 export const fadeInUpBig = "animate__animated animate__fadeInUpBig"

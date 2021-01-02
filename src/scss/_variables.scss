@@ -30,7 +30,7 @@
   --light-salmon: #ff9770;
   --salmon: #f25c54;
   --light-yellow: #ffee32;
-  --yellow: #;
+  --yellow-cream: #ffd15c;
 
   // Font Families
   // Textos, enlaces, subtitulos
@@ -49,3 +49,12 @@
   --radius: 9px;
   --border-invisible: 1px solid rgba(0, 0, 0, 0);
 }
+
+// Screens
+// Estas variables definen el tamano de las pantallas para hacer breakpoint
+$phone: 375px;
+$large-phone: 420px;
+$ipad: 700px;
+$large: 1024px;
+$laptop: 1280px;
+$xxl: 1240px;
