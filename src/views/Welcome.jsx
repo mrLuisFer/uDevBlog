@@ -43,8 +43,13 @@ export default function WelcomeView() {
             Conozcamos a mas <br /> comunidades!
           </button>
         </div>
-        <div className="WelcomeView__links-div">
-          <a className="WelcomeView__links-div__link" href="/">
+        <div className={fadeInUp + " WelcomeView__links-div"}>
+          <a
+            className="WelcomeView__links-div__link"
+            href="https://github.com/mrLuisFer/uDevBlog"
+            target="_blank"
+            rel="noreferrer"
+          >
             Repositorio
           </a>
           <a className="WelcomeView__links-div__link" href="/">
