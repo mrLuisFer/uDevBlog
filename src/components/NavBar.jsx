@@ -1,10 +1,16 @@
 import React from 'react';
 
-export default function NavBar() {
+export default function NavBar({menu, setMenu}) {
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
     <div className='NavBar'>
-      <span>logo</span>
-      <i className='fas fa-hamburger'></i>
+      <i
+        className={menu ? 'fas fa-times' : 'fas fa-hamburger'}
+        onClick={handleMenu}
+      ></i>
     </div>
   );
 }
