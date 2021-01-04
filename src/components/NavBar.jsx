@@ -1,13 +1,16 @@
-import React from "react"
+import React from 'react';
 
-export default function NavBar() {
+export default function NavBar({menu, setMenu}) {
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
-    <div className="NavBar">
-      <span>logo</span>
-      {/* Posiblemente una barra de busqueda */}
-      <div>
-        <span>Links</span>
-      </div>
+    <div className='NavBar'>
+      <i
+        className={menu ? 'fas fa-times' : 'fas fa-hamburger'}
+        onClick={handleMenu}
+      ></i>
     </div>
-  )
+  );
 }
