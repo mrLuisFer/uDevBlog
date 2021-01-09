@@ -85,7 +85,7 @@
   &__title {
     text-align: left;
     font-weight: 700;
-    text-shadow: 1px 1px 0 var(--sandy-brown);
+    text-shadow: 1px 1px 0 var(--terciario);
     transition: var(--transition);
     margin-bottom: 1.5rem;
 
@@ -116,19 +116,19 @@
     }
 
     span {
-      color: var(--sandy-brown);
-      text-shadow: 1px 1px 0px var(--shadow-color);
+      color: var(--terciario);
+      text-shadow: 1px 1px 0px var(--terciario-2);
       transition: var(--transition);
       display: block;
     }
 
     &:hover {
-      color: var(--sandy-brown);
+      color: var(--terciario);
       text-shadow: 1px 1px 0 var(--shadow-color);
 
       span {
-        color: var(--dark);
-        text-shadow: 1px 1px 0 var(--sandy-brown);
+        color: var(--principal);
+        text-shadow: 1px 1px 0 var(--terciario-2);
       }
     }
   }
@@ -174,7 +174,7 @@
     }
     &:hover {
       span {
-        color: var(--salmon);
+        color: var(--terciario);
       }
     }
   }
@@ -201,7 +201,8 @@
       margin: 2.5rem 0;
       border: 0;
       border-radius: var(--radius);
-      background: var(--naples-yellow);
+      background: var(--terciario);
+      color: var(--white);
       transition: var(--transition);
       font-weight: 500;
       @include no-select;
@@ -258,15 +259,15 @@
     }
 
     a {
-      color: var(--grey);
+      color: var(--principal);
       text-decoration: none;
       border: var(--border-invisible);
       font-weight: 300;
       font-size: 0.9rem;
 
       &:hover {
-        color: var(--dark-charcoal);
-        border-bottom: 1px solid var(--charcoal);
+        color: var(--secundario);
+        border-bottom: 1px solid var(--terciario);
       }
 
       @media (min-width: $large) {
