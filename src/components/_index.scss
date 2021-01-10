@@ -2,5 +2,5 @@
 // solo tener que exportar un solo archivo
 
 @import './Header/Header';
-// @import './HeaderMenuMobile/HeaderMenuMobile.scss';
-// @import './NavBar/NavBar.scss'
+@import './NavBar/NavBar.scss';
+@import './HeaderMenuMobile/HeaderMenuMobile.scss';

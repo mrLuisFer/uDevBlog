@@ -1,0 +1,23 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    transform: scale(0.9);
+    width: auto;
+    @include no-select;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    &-bars {
+      color: var(--principal);
+    }
+  }
+}
