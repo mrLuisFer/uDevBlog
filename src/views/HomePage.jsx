@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 // Components
 import Header from '../components/Header/Header';
 import HeaderMenuMobile from '../components/HeaderMenuMobile/HeaderMenuMobile';
+import HomePosts from '../components/HomePosts/HomePosts';
 
 export default function HomePage() {
   const [menu, setMenu] = useState(false);
@@ -10,6 +11,7 @@ export default function HomePage() {
   const handleMenu = () => {
     setMenu(!menu);
   };
+
   return (
     <div className='HomePage'>
       {menu ? (
@@ -17,7 +19,7 @@ export default function HomePage() {
       ) : (
         <>
           <Header menu={menu} handleMenu={handleMenu} />
-          <p>some other components</p>
+          <HomePosts />
         </>
       )}
     </div>

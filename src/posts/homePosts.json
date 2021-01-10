@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBKeq4quQmqxUqpj7KJsFSZ_0RP4_bQFBVw&usqp=CAU",
+    "title": "Google Developers Training",
+    "description": "Google has a vision to help bridge the developer-skills gap in Africa by providing better access to high-quality, world-class skilling",
+    "categorias": ["cat1", "cat2"]
+  },
+  {
+    "id": 2,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBKeq4quQmqxUqpj7KJsFSZ_0RP4_bQFBVw&usqp=CAU",
+    "title": "Google Developers Training",
+    "description": "Google has a vision to help bridge the developer-skills gap in Africa by providing better access to high-quality, world-class skilling",
+    "categorias": ["cat4", "cat5"]
+  },
+  {
+    "id": 3,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBKeq4quQmqxUqpj7KJsFSZ_0RP4_bQFBVw&usqp=CAU",
+    "title": "Google Developers Training",
+    "description": "Google has a vision to help bridge the developer-skills gap in Africa by providing better access to high-quality, world-class skilling",
+    "categorias": ["cat5", "cat6"]
+  }
+]

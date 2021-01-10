@@ -11,18 +11,18 @@ export default function HeaderMenuMobile({handleMenu, menu}) {
   return (
     <div className={slideInDown + ' HeaderMenuMobile'}>
       <NavBar handleMenu={handleMenu} menu={menu} />
-      <a href='/home' className='HeaderMenuMobile__anchor'>
-        Home
-      </a>
-      <a href='/home' className='HeaderMenuMobile__anchor'>
-        Descubrir
-      </a>
-      <a href='/home' className='HeaderMenuMobile__anchor'>
-        Vacantes
-      </a>
-      <a href='/home' className='HeaderMenuMobile__anchor'>
-        About
-      </a>
+      <p className='HeaderMenuMobile__anchor'>
+        <a href='/home'>Home</a>
+      </p>
+      <p className='HeaderMenuMobile__anchor'>
+        <a href='/home'>Descubrir</a>
+      </p>
+      <p className='HeaderMenuMobile__anchor'>
+        <a href='/home'>Vacantes</a>
+      </p>
+      <p className='HeaderMenuMobile__anchor'>
+        <a href='/home'>About</a>
+      </p>
     </div>
   );
 }

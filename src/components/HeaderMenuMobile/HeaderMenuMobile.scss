@@ -7,15 +7,19 @@
 
   &__anchor {
     display: block;
-    text-decoration: none;
-    line-height: 1.5;
     margin: 3rem 0;
-    color: var(--white);
-    font-weight: 600;
-    letter-spacing: 1.05px;
 
-    &:hover {
-      @include text-underline(var(--terciario-2));
+    a {
+      display: inline-block;
+      text-decoration: none;
+      line-height: 1.5;
+      color: var(--white);
+      font-weight: 600;
+      letter-spacing: 1.05px;
+
+      &:hover {
+        @include text-underline(var(--terciario-2));
+      }
     }
   }
 }

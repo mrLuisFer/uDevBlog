@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 // Assets
 import logoHorizontalNoBg from '../../assets/logo/logoHorizontal-noBg.svg';
 import logoHorizontal from '../../assets/logo/logoHorizontal.svg';
-
 // Utils
 import {fadeIn} from '../../utils/animateCss';
 

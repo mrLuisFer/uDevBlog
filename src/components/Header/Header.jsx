@@ -4,8 +4,8 @@ import NavBar from '../NavBar/NavBar';
 
 export default function Header({handleMenu, menu}) {
   return (
-    <div className='Header'>
+    <nav className='Header'>
       <NavBar handleMenu={handleMenu} menu={menu} />
-    </div>
+    </nav>
   );
 }
