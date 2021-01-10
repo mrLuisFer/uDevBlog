@@ -15,10 +15,10 @@ export default function HeaderMenuMobile({handleMenu, menu}) {
         <a href='/home'>Home</a>
       </p>
       <p className='HeaderMenuMobile__anchor'>
-        <a href='/home'>Descubrir</a>
+        <a href='/home'>Comunidades</a>
       </p>
       <p className='HeaderMenuMobile__anchor'>
-        <a href='/home'>Vacantes</a>
+        <a href='/home'>Descubrir</a>
       </p>
       <p className='HeaderMenuMobile__anchor'>
         <a href='/home'>About</a>

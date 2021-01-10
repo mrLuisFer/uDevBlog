@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
 
+  @include no-select;
+
   &__logo {
     transform: scale(0.9);
     width: auto;
