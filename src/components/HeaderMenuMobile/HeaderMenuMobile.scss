@@ -15,7 +15,7 @@
     letter-spacing: 1.05px;
 
     &:hover {
-      text-decoration: underline;
+      @include text-underline(var(--terciario-2));
     }
   }
 }

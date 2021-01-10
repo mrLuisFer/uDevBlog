@@ -9,13 +9,14 @@
     @include no-select;
 
     img {
-      height: 60px;
+      height: 65px;
     }
   }
 
   &__icon {
     font-size: 1.2rem;
     margin-right: 0.8rem;
+    cursor: pointer;
     &-bars {
       color: var(--principal);
     }
