@@ -1,6 +1,6 @@
 import React from 'react';
 // Utils
-import {fadeInRightBig} from '../utils/animateCss';
+import {fadeInRightBig} from '../../utils/animateCss';
 
 export default function HeaderMenuMobile() {
   return (

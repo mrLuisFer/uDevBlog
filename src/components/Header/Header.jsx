@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 // Components
-import NavBar from './NavBar';
-import HeaderMenuMobile from './HeaderMenuMobile';
+import NavBar from '../NavBar/NavBar';
+import HeaderMenuMobile from '../HeaderMenuMobile/HeaderMenuMobile';
 // Assets
-import logoHorizontalNoBg from '../assets/logo/logoHorizontal-noBg.svg';
+import logoHorizontalNoBg from '../../assets/logo/logoHorizontal-noBg.svg';
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
