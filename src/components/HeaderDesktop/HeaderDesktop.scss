@@ -1,0 +1,22 @@
+.HeaderDesktop {
+  display: none;
+
+  // Aqui es para evitar renderizados erroneos con react
+  // solo si es el tamaño del window = 1024px
+  @media (min-width: $large) {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+
+    &__link {
+      text-decoration: none;
+      color: var(--secundario);
+      font-size: 1.05rem;
+
+      &:hover {
+        @include text-underline(var(--terciario));
+        color: var(--principal);
+      }
+    }
+  }
+}

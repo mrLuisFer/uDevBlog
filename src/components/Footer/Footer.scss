@@ -5,6 +5,10 @@
   margin-top: 10rem;
   height: auto;
 
+  &__link {
+    @include no-select;
+  }
+
   &__logo {
     margin-bottom: 4rem;
     width: 180px;

@@ -12,17 +12,11 @@
 
   @include no-select;
 
+  @media (min-width: $large) {
+    display: none;
+  }
+
   i {
     font-size: 1.5rem;
   }
-}
-
-.active {
-  display: block;
-  visibility: visible;
-}
-
-.no-active {
-  display: none;
-  visibility: hidden;
 }

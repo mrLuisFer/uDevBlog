@@ -1,9 +1,17 @@
 .HomePosts {
   text-align: center;
 
+  @media (min-width: $large) {
+    padding: 5%;
+  }
+
   &__title {
     font-size: 2.5rem;
     @include no-select;
+
+    @media (min-width: $large) {
+      text-align: left;
+    }
   }
 
   &__content {
