@@ -1,7 +1,8 @@
 import React from 'react';
-
 // Assets
 import {fadeInUpBig} from '../../utils/animateCss/index';
+// Utils
+import {truncate} from '../../utils/truncateFunction/truncateFunction';
 
 export default function PostComponent({
   imgUrl,
@@ -9,14 +10,18 @@ export default function PostComponent({
   description,
   categories,
 }) {
-  // @todo: hacer mas dinamica la funcion
-  const truncate = (str, length = '100') => {
-    if (str.length >= length) {
-      return str.length > 10 ? str.substring(0, length) + '...' : str;
-    } else {
-      return str + '.';
-    }
-  };
+  console.log(window.innerWidth);
+
+  // aqui calcula el ancho de la pantalla par poder recortar mas o menos texto
+  let length;
+  const windowWidth = window.innerWidth;
+  if (windowWidth >= 700) {
+    length = '121';
+  } else if (windowWidth >= 1024) {
+    length = '311';
+  } else {
+    length = '91';
+  }
 
   return (
     <div className={fadeInUpBig + ' PostComponent'}>
@@ -24,7 +29,7 @@ export default function PostComponent({
       <div className='PostComponent__content'>
         <h3 className='PostComponent__content-title'>{title}</h3>
         <p className='PostComponent__content-description'>
-          {truncate(description)}
+          {truncate(description, length)}
         </p>
         <div className='PostComponent__categories'>
           {categories?.map((category) => (

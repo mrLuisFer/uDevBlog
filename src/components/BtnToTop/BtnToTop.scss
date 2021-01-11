@@ -1,0 +1,28 @@
+.BtnToTop {
+  border-radius: 50%;
+  position: fixed;
+  right: 1%;
+  bottom: 0vh;
+  background-color: #fff;
+  padding: 0.8rem;
+  box-shadow: 2px 2px 5px 0px var(--shadow-color);
+  margin: 1rem;
+  color: var(--secundario);
+  cursor: pointer;
+
+  @include no-select;
+
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+.active {
+  display: block;
+  visibility: visible;
+}
+
+.no-active {
+  display: none;
+  visibility: hidden;
+}

@@ -13,6 +13,10 @@
     img {
       height: 65px;
       margin-left: -0.5rem;
+
+      @media (min-width: $ipad) {
+        height: 70px;
+      }
     }
   }
 
@@ -22,6 +26,12 @@
     cursor: pointer;
     &-bars {
       color: var(--principal);
+    }
+
+    // es min porque vamos desxde la pantalla mas baja hasta una mas a
+    @media (min-width: $ipad) {
+      font-size: 1.5rem;
+      margin-right: 0;
     }
   }
 }
