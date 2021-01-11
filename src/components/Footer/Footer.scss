@@ -5,6 +5,14 @@
   margin-top: 10rem;
   height: auto;
 
+  @media (min-width: $large) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: 7rem;
+  }
+
   &__link {
     @include no-select;
   }
@@ -16,6 +24,10 @@
     @media (min-width: $ipad) {
       width: 210px;
       margin-bottom: 3rem;
+    }
+
+    @media (min-width: $large) {
+      margin-bottom: 0;
     }
   }
 
@@ -34,6 +46,10 @@
         width: 30rem;
         margin: 0 auto;
         line-height: 1.7;
+      }
+
+      @media (min-width: $large) {
+        text-align: right;
       }
     }
   }

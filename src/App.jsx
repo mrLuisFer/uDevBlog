@@ -28,10 +28,10 @@ function App() {
             <Route path='/home'>
               <Header menu={menu} handleMenu={handleMenu} />
               <HomePage />
+              <Footer />
             </Route>
           )}
         </Switch>
-        {menu ? '' : <Footer />}
       </div>
     </Router>
   );

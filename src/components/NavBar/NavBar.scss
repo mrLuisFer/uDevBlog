@@ -17,6 +17,11 @@
       @media (min-width: $ipad) {
         height: 70px;
       }
+
+      @media (min-width: $large) {
+        height: 80px;
+        transform: scale(1);
+      }
     }
   }
 

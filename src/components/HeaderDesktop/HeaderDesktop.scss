@@ -17,6 +17,10 @@
         @include text-underline(var(--terciario));
         color: var(--principal);
       }
+
+      @media (min-width: $large) {
+        font-size: 1.2rem;
+      }
     }
   }
 }

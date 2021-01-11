@@ -27,7 +27,7 @@ export default function NavBar({menu, handleMenu}) {
       </Link>
 
       {/* Esto detecta el tamaño de la pantalla para renderizar el menu o headerDesktop */}
-      {windowZize <= 1024 ? (
+      {windowZize <= 900 ? (
         <i
           className={
             (menu

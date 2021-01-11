@@ -7,6 +7,7 @@
 
   &__title {
     font-size: 2.5rem;
+    margin-bottom: 3rem;
     @include no-select;
 
     @media (min-width: $large) {
@@ -16,10 +17,18 @@
 
   &__content {
     padding: 0 5%;
-    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 3rem;
+
+    @media (min-width: $large) {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 400px 400px;
+      justify-content: space-between;
+      column-gap: 3rem;
+      row-gap: 5rem;
+    }
   }
 }

@@ -15,6 +15,11 @@
     margin: 0 auto;
   }
 
+  @media (min-width: $large) {
+    width: auto;
+    // width: 350px;
+  }
+
   // imagen del post
   &__img {
     width: 8.12rem;
@@ -28,6 +33,10 @@
       height: 18rem;
       object-position: none;
       border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    @media (min-width: $large) {
+      margin-top: -0.4rem;
     }
   }
 
@@ -61,6 +70,10 @@
         font-size: 1.12rem;
         padding-right: 3.5rem;
         line-height: 1.5;
+      }
+
+      @media (min-width: $large) {
+        padding-right: 2rem;
       }
     }
   }
