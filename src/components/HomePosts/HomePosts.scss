@@ -2,7 +2,7 @@
   text-align: center;
 
   @media (min-width: $large) {
-    padding: 5%;
+    padding: 5% 3%;
   }
 
   &__title {
@@ -25,10 +25,17 @@
     @media (min-width: $large) {
       padding: 0;
       display: grid;
-      grid-template-columns: 350px 350px;
+      grid-template-columns: repeat(2, 400px);
       justify-content: space-between;
       column-gap: 2rem;
       row-gap: 5rem;
+    }
+
+    @media (min-width: $laptop) {
+      grid-template-columns: repeat(2, 420px);
+      justify-content: space-around;
+      column-gap: 4rem;
+      margin: 0 auto;
     }
   }
 
@@ -42,5 +49,9 @@
   &__aside {
     margin-left: 2rem;
     width: 190px;
+
+    @media (min-width: $laptop) {
+      width: 280px;
+    }
   }
 }
