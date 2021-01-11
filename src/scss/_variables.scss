@@ -6,10 +6,10 @@
   // Estas son la primera version de la paleta de colores que utilizaremos
   // En caso sea necesario cambiar un color lo haremos desde la variable manualmente pero revisando que no afecte
   // a otros estilos
-  --white: #f1f1f1;
+  --white: #fdfdfd;
   --dark: #141313;
 
-  --shadow-color: rgba(59, 35, 35, 0.7);
+  --shadow-color: rgba(59, 35, 35, 0.4);
 
   // new Palette
   --principal: #071e3d;
@@ -33,6 +33,7 @@
 
 // Screens
 // Estas variables definen el tamano de las pantallas para hacer breakpoint
+// o media query
 $phone: 375px;
 $large-phone: 420px;
 $ipad: 700px;

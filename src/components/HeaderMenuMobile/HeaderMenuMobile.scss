@@ -1,0 +1,29 @@
+.HeaderMenuMobile {
+  background: var(--secundario);
+  color: var(--white);
+  padding: 5%;
+  height: 100vh;
+  overflow: hidden;
+
+  &__anchor {
+    display: block;
+    margin: 3rem 0;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      line-height: 1.5;
+      color: var(--white);
+      font-weight: 600;
+      letter-spacing: 1.05px;
+
+      &:hover {
+        @include text-underline(var(--terciario-2));
+      }
+
+      @media (min-width: $ipad) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

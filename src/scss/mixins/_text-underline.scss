@@ -1,0 +1,6 @@
+@mixin text-underline($line-color) {
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-decoration-style: solid;
+  text-decoration-color: $line-color;
+}

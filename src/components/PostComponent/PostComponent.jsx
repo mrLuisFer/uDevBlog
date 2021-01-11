@@ -1,0 +1,42 @@
+import React from 'react';
+// Assets
+import {fadeInUpBig} from '../../utils/animateCss/index';
+// Utils
+import {truncate} from '../../utils/truncateFunction/truncateFunction';
+
+export default function PostComponent({
+  imgUrl,
+  title,
+  description,
+  categories,
+}) {
+  // aqui calcula el ancho de la pantalla par poder recortar mas o menos texto
+  let length;
+  const windowWidth = window.innerWidth;
+  if (windowWidth >= 700) {
+    length = '121';
+  } else if (windowWidth >= 1024) {
+    length = '311';
+  } else {
+    length = '91';
+  }
+
+  return (
+    <div className={fadeInUpBig + ' PostComponent'}>
+      <img src={imgUrl} alt={title} className='PostComponent__img' />
+      <div className='PostComponent__content'>
+        <h3 className='PostComponent__content-title'>{title}</h3>
+        <p className='PostComponent__content-description'>
+          {truncate(description, length)}
+        </p>
+        <div className='PostComponent__categories'>
+          {categories?.map((category) => (
+            <span key={category} className='PostComponent__categories-category'>
+              {category}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

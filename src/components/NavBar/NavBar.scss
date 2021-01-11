@@ -1,0 +1,42 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include no-select;
+
+  &__logo {
+    transform: scale(0.9);
+    width: auto;
+    @include no-select;
+
+    img {
+      height: 65px;
+      margin-left: -0.5rem;
+
+      @media (min-width: $ipad) {
+        height: 70px;
+      }
+
+      @media (min-width: $large) {
+        height: 80px;
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+    &-bars {
+      color: var(--principal);
+    }
+
+    // es min porque vamos desxde la pantalla mas baja hasta una mas a
+    @media (min-width: $ipad) {
+      font-size: 1.5rem;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,11 +1,12 @@
 import React from 'react';
+
 // Components
-import Header from '../components/Header/Header';
+import HomePosts from '../components/HomePosts/HomePosts';
 
 export default function HomePage() {
   return (
-    <div>
-      <Header />
+    <div className='HomePage'>
+      <HomePosts />
     </div>
   );
 }

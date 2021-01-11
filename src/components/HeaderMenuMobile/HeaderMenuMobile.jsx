@@ -1,14 +1,36 @@
 import React from 'react';
-// Utils
-import {fadeInRightBig} from '../../utils/animateCss';
+import {Link} from 'react-router-dom';
 
-export default function HeaderMenuMobile() {
+// Utils
+import {slideInDown} from '../../utils/animateCss';
+
+// Components
+import NavBar from '../NavBar/NavBar';
+
+export default function HeaderMenuMobile({handleMenu, menu}) {
   return (
-    <div className={fadeInRightBig + ' HeaderMenuMobile'}>
-      <p>Home</p>
-      <p>Descubrir</p>
-      <p>Vacantes</p>
-      <p>About</p>
+    <div className={slideInDown + ' HeaderMenuMobile'}>
+      <NavBar handleMenu={handleMenu} menu={menu} />
+      <p className='HeaderMenuMobile__anchor'>
+        <Link to='/home' onClick={handleMenu}>
+          Home
+        </Link>
+      </p>
+      <p className='HeaderMenuMobile__anchor'>
+        <Link to='/home' onClick={handleMenu}>
+          Comunidades
+        </Link>
+      </p>
+      <p className='HeaderMenuMobile__anchor'>
+        <Link to='/home' onClick={handleMenu}>
+          Descubrir
+        </Link>
+      </p>
+      <p className='HeaderMenuMobile__anchor'>
+        <Link to='/home' onClick={handleMenu}>
+          About
+        </Link>
+      </p>
     </div>
   );
 }

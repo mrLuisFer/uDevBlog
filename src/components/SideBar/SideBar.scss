@@ -1,0 +1,28 @@
+.SideBar {
+  display: none;
+
+  @media (min-width: $large) {
+    display: inline-block;
+    height: 700px;
+    background: var(--secundario);
+    // width: 190px;
+    width: 100%;
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 2rem 1rem;
+    text-align: left;
+    // max-width: 320px;
+    position: relative;
+    right: 0;
+    margin-bottom: 4rem;
+
+    &__title {
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 2.5rem 0;
+      letter-spacing: 0.7px;
+    }
+  }
+}

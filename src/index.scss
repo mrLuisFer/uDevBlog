@@ -1,22 +1,23 @@
 //// normalize (css)
-@import "./scss/normalize";
+@import './scss/normalize';
 
 //// Variables
-@import "./scss/variables";
+@import './scss/variables';
 
 //// Utils
 // Animate Css
-@import "../node_modules/animate.css/animate.min.css";
+@import '../node_modules/animate.css/animate.min.css';
 
 // Globals
-@import "./scss/globals";
+@import './scss/globals';
 
 //// Mixins
-@import "./scss/mixins/no-select";
+@import './scss/mixins/no-select';
+@import './scss/mixins/text-underline';
 
 //// Components
 // App
-@import "./scss/App";
+@import './scss/App';
 
 //// Views
-@import "./scss/views/Welcome";
+@import './scss/views/Welcome';
