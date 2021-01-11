@@ -2,6 +2,7 @@
   display: none;
 
   @media (min-width: $large) {
+    box-shadow: 0.5px 1px 5px var(--shadow-color);
     display: inline-block;
     height: 700px;
     background: var(--secundario);

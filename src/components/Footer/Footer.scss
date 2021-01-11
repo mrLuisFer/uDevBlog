@@ -29,6 +29,10 @@
     @media (min-width: $large) {
       margin-bottom: 0;
     }
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   &__content {
@@ -39,6 +43,7 @@
       color: var(--white);
       font-weight: 500;
       font-size: 0.9rem;
+      transition: var(--transition);
 
       @media (min-width: $ipad) {
         font-size: 1rem;
@@ -50,6 +55,10 @@
 
       @media (min-width: $large) {
         text-align: right;
+      }
+
+      &:hover {
+        letter-spacing: 0.1px;
       }
     }
   }
