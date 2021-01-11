@@ -10,8 +10,6 @@ export default function PostComponent({
   description,
   categories,
 }) {
-  console.log(window.innerWidth);
-
   // aqui calcula el ancho de la pantalla par poder recortar mas o menos texto
   let length;
   const windowWidth = window.innerWidth;

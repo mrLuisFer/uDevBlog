@@ -25,10 +25,22 @@
     @media (min-width: $large) {
       padding: 0;
       display: grid;
-      grid-template-columns: 400px 400px;
+      grid-template-columns: 350px 350px;
       justify-content: space-between;
-      column-gap: 3rem;
+      column-gap: 2rem;
       row-gap: 5rem;
     }
+  }
+
+  &__flex {
+    @media (min-width: $large) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__aside {
+    margin-left: 2rem;
+    width: 190px;
   }
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 // Assets
@@ -6,16 +6,12 @@ import logoHorizontalNoBg from '../../assets/logo/logoHorizontal-noBg.svg';
 import logoHorizontal from '../../assets/logo/logoHorizontal.svg';
 // Utils
 import {fadeIn} from '../../utils/animateCss';
+import {useWindow} from '../../hooks/useWindow/useWindow';
 // Components
 import HeaderDesktop from '../HeaderDesktop/HeaderDesktop';
 
 export default function NavBar({menu, handleMenu}) {
-  const [windowZize, setWindowZize] = useState(0);
-
-  useEffect(() => {
-    const windowWidth = window.innerWidth;
-    setWindowZize(windowWidth);
-  }, []);
+  const windowSize = useWindow();
 
   return (
     <div className={fadeIn + ' NavBar'}>
@@ -27,7 +23,7 @@ export default function NavBar({menu, handleMenu}) {
       </Link>
 
       {/* Esto detecta el tamaño de la pantalla para renderizar el menu o headerDesktop */}
-      {windowZize <= 900 ? (
+      {windowSize <= 900 ? (
         <i
           className={
             (menu
