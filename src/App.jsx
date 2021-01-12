@@ -7,6 +7,7 @@ import HomePage from './views/HomePage';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import HeaderMenuMobile from './components/HeaderMenuMobile/HeaderMenuMobile';
+import Article from './components/Article/Article';
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -31,6 +32,11 @@ function App() {
               <Footer />
             </Route>
           )}
+
+          {/* Esto redirecciona hacia el articulo que hayan clickeado */}
+          <Route path={`/article/:id`}>
+            <Article />
+          </Route>
         </Switch>
       </div>
     </Router>

@@ -29,6 +29,7 @@ export default function HomePosts() {
                 title={title}
                 description={description}
                 categories={categories}
+                id={id}
               />
             ))}
           </div>

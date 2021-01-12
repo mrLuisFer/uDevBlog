@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom';
 // Assets
 import {fadeInUpBig} from '../../utils/animateCss/index';
 // Utils
@@ -9,6 +10,7 @@ export default function PostComponent({
   title,
   description,
   categories,
+  id,
 }) {
   // aqui calcula el ancho de la pantalla par poder recortar mas o menos texto
   let length;
@@ -21,8 +23,15 @@ export default function PostComponent({
     length = '91';
   }
 
+  let history = useHistory();
+  const handleOpenArticle = () => {
+    history.push(`/article/${id}`);
+
+    console.log(history.location);
+  };
+
   return (
-    <div className={fadeInUpBig + ' PostComponent'}>
+    <div className={fadeInUpBig + ' PostComponent'} onClick={handleOpenArticle}>
       <img src={imgUrl} alt={title} className='PostComponent__img' />
       <div className='PostComponent__content'>
         <h3 className='PostComponent__content-title'>{title}</h3>
