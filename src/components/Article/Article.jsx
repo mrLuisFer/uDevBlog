@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import {useParams, Link} from 'react-router-dom';
 
 import markdown from './test.md';
@@ -12,10 +11,7 @@ export default function Article() {
   return (
     <>
       {parseInt(id) ? (
-        <div>
-          <ReactMarkdown />
-          some {id}
-        </div>
+        <div>some {id}</div>
       ) : (
         <div>
           <p>No existe el articulo :I</p>
