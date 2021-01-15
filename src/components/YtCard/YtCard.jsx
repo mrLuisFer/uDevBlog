@@ -1,34 +1,58 @@
-import React, {useEffect} from 'react';
+import React, {useState} from 'react';
+import channelsData from './_channels.json';
+// Assets
+import ytCardIcon from '../../assets/ytCard/yt-card-icon.svg';
 
 export default function YtCard() {
-  const channels = [
-    'UCOD6LXgeBoeiUZTsPLdG-0g',
-    'UCw05fUBPwmpu-ehXFMqfdMw',
-    'UCne4X8czEkhh8GPRjXBIQJw',
-    'UCNhumBIUSP9G0O5DBoWSHVg',
-  ];
+  const [channelIndex, setchannelIndex] = useState(0);
 
-  // Esto hace la llamada a la url de google
-  // y hace que funcione el button de youtube
-  useEffect(() => {
-    const script = document.createElement('script');
+  const channel = channelsData[channelIndex];
 
-    script.src = 'https://apis.google.com/js/platform.js';
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
+  // Esto suma 1 para que el index del array de los channels
+  const handleSumIndex = () => {
+    if (channelsData.length > channelIndex) {
+      setchannelIndex(channelIndex + 1);
+    } else {
+      setchannelIndex(0);
+    }
+  };
+
+  // Esto resta 1 al index para que regrese a una pocision anterior
+  const handleSubsIndex = () => {
+    if (channelsData.length < channelIndex) {
+      setchannelIndex(channelIndex - 1);
+    } else {
+      setchannelIndex(0);
+    }
+  };
 
   return (
     <div className='YtCard'>
-      <div
-        className='g-ytsubscribe'
-        // Este es el id del canal que cambiara de manera dinamica
-        // Esa pagina te da el id del canal que quieras colocar
-        // https://commentpicker.com/youtube-channel-id.php
-        data-channelid={channels[0]}
-        data-layout='full'
-        data-count='hidden'
-      ></div>
+      <span onClick={handleSubsIndex} className='YtCard__arrow'>
+        <i className='fas fa-angle-left'></i>
+      </span>
+      <div className='YtCard__container'>
+        <div className='YtCard__container-profile'>
+          <img
+            src={channel?.avatar}
+            alt={channel?.title}
+            className='YtCard__container__avatar'
+          />
+          <h3 className='YtCard__container__title'>{channel?.title}</h3>
+        </div>
+        <a
+          className='YtCard__container__link'
+          href={channel?.link}
+          target='_blank'
+          rel='noreferrer'
+        >
+          <img src={ytCardIcon} />
+          Suscribirse!
+        </a>
+      </div>
+      <span onClick={handleSumIndex} className='YtCard__arrow'>
+        <i className='fas fa-angle-right'></i>
+      </span>
     </div>
   );
 }

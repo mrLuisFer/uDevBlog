@@ -2,10 +2,55 @@
   display: none;
 
   @media (min-width: $large) {
-    display: block;
     width: 100%;
-    padding: 1.5rem 0;
     box-shadow: 1px 1px 4px var(--shadow-color);
     border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0.9rem;
+
+    &__arrow {
+      font-size: 1.7rem;
+    }
+
+    &__container {
+      padding: 0 1.5rem;
+
+      &-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      &__avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      &__title {
+        margin-left: 0.5rem;
+      }
+
+      &__link {
+        background: #ff0000;
+        color: var(--white);
+        text-decoration: none;
+        font-size: 0.8rem;
+        column-gap: 0.7rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        border-radius: var(--radius);
+        padding: 0.6rem 0.8rem;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
   }
 }
