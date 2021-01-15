@@ -2,10 +2,76 @@
   display: none;
 
   @media (min-width: $large) {
-    display: block;
     width: 100%;
-    padding: 1.5rem 0;
     box-shadow: 1px 1px 4px var(--shadow-color);
     border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.3rem;
+    transition: var(--transition);
+
+    &:hover {
+      box-shadow: 1.5px 1.5px 6px var(--shadow-color);
+    }
+
+    &__arrow {
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--secundario);
+    }
+
+    &__container {
+      padding: 0 1.5rem;
+
+      &-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: var(--principal);
+      }
+
+      &__avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      &__title {
+        margin-left: 0.5rem;
+        font-weight: 500;
+      }
+
+      #YtCard__link {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 0.9rem;
+        column-gap: 0.7rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: var(--radius);
+        padding: 0.6rem 0.8rem;
+
+        @include no-select;
+
+        i {
+          font-size: 1.3rem;
+          display: block;
+        }
+      }
+
+      // Muestra si el youtuber es undefined para mostrar color o no
+      &__active {
+        background: #ff0000;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      &__no-active {
+        background: #9c9c9c;
+      }
+    }
   }
 }
