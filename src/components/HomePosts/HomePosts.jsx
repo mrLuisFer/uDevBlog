@@ -7,13 +7,9 @@ import YtCard from '../YtCard/YtCard';
 
 // Utils
 import { fadeIn } from '../../utils/animateCss/index';
-// Hooks
-import { useWindow } from '../../hooks/useWindow/useWindow';
 
 export default function HomePosts() {
   const [posts, setPosts] = useState([]);
-
-  const windowSize = useWindow();
 
   const fetchingPosts = async () => {
     const res = await fetch('http://localhost:4000/home');
@@ -45,16 +41,13 @@ export default function HomePosts() {
               />
             ))}
           </div>
-          {windowSize >= 1024 ? (
-            <aside className='HomePosts__aside'>
-              <SideBar />
-              <div>
-                <YtCard />
-              </div>
-            </aside>
-          ) : (
-            ''
-          )}
+          {/* El aside se muestra al tamaño 1024px de la pantalla */}
+          <aside className='HomePosts__aside'>
+            <SideBar />
+            <div>
+              <YtCard />
+            </div>
+          </aside>
         </div>
       </div>
       <BtnToTop />

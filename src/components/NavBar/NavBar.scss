@@ -42,5 +42,9 @@
       font-size: 1.5rem;
       margin-right: 0;
     }
+
+    @media (min-width: 900px) {
+      display: none;
+    }
   }
 }
