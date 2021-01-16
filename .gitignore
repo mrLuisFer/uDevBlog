@@ -57,3 +57,7 @@ sketch
 *.css.map
 *.sass.map
 *.scss.map
+
+# Eslint cache
+.eslintcache
+.cache
