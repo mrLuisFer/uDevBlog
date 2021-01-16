@@ -3,7 +3,7 @@ import React from 'react'
 // Utils
 import {fadeIn} from '../../utils/animateCss/index';
 
-const AboutText = () => {
+export default function AboutText() {
     return (
         <>
             <div className={fadeIn + 'AboutText'}>
@@ -14,4 +14,3 @@ const AboutText = () => {
     )
 }
 
-export default AboutText
