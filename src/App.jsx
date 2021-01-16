@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Views
 import WelcomeView from './views/Welcome';
 import HomePage from './views/HomePage';

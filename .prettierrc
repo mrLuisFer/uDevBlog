@@ -3,7 +3,9 @@
   "singleQuote": true,
   "jsxSingleQuote": true,
   "trailingComma": "all",
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "proseWrap": "always",
-  "semi": true
+  "semi": true,
+  "jsx-single-quote": true,
+  "lint": "pretty-quick --staged & eslint 'src/**/*.{js,jsx}' --quiet --fix"
 }

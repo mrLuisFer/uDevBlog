@@ -206,6 +206,7 @@
       transition: var(--transition);
       font-weight: 500;
       @include no-select;
+      outline: none;
 
       @media (min-width: $ipad) {
         max-width: 17rem;
