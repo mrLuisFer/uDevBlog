@@ -7,19 +7,13 @@ import YtCard from '../YtCard/YtCard';
 
 // Utils
 import { fadeIn } from '../../utils/animateCss/index';
+import { fetchingPosts } from '../../utils/fetchingPosts/fetchingPosts';
 
 export default function HomePosts() {
   const [posts, setPosts] = useState([]);
 
-  const fetchingPosts = async () => {
-    const res = await fetch('http://localhost:4000/home');
-    const data = await res.json();
-
-    setPosts(data);
-  };
-
   useEffect(() => {
-    fetchingPosts();
+    fetchingPosts(setPosts);
   }, []);
 
   console.log(posts);
