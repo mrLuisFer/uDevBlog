@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 // Channels
 import channelsData from './_channels.json';
 // Assets
@@ -28,7 +28,7 @@ export default function YtCard() {
 
   return (
     <>
-      <h1>Conocer mas!</h1>
+      <h1 className='YtCard__title'>Conocer mas!</h1>
       <div className='YtCard'>
         <span onClick={handleSubsIndex} className='YtCard__arrow'>
           <i className='fas fa-angle-left'></i>

@@ -74,4 +74,12 @@
       }
     }
   }
+
+  &__title {
+    display: none;
+
+    @media (min-width: $large) {
+      display: block;
+    }
+  }
 }
