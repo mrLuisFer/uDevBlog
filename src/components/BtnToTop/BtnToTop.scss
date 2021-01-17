@@ -10,6 +10,7 @@
   color: var(--secundario);
   backface-visibility: hidden;
   cursor: pointer;
+  z-index: 20;
 
   @include no-select;
 
@@ -18,6 +19,6 @@
   }
 
   i {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
