@@ -12,7 +12,7 @@ export default function HeaderDesktop() {
       <a href='/home' className='HeaderDesktop__link'>
         Descubrir
       </a>
-      <a href='/home' className='HeaderDesktop__link'>
+      <a href='/About' className='HeaderDesktop__link'>
         About
       </a>
     </div>
