@@ -61,3 +61,6 @@ sketch
 # Eslint cache
 .eslintcache
 .cache
+##Eslint cache
+.eslintcache
+.cache

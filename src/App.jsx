@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Views
 import WelcomeView from './views/Welcome';
 import HomePage from './views/HomePage';
+import About from './views/About';
 // Components
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -29,6 +30,16 @@ function App() {
             <Route path='/home'>
               <Header menu={menu} handleMenu={handleMenu} />
               <HomePage />
+              <Footer />
+            </Route>
+          )}
+
+          {menu ? (
+            <HeaderMenuMobile handleMenu={handleMenu} menu={menu} />
+          ) : (
+            <Route path='/About'>
+              <Header menu={menu} handleMenu={handleMenu} />
+              <About />
               <Footer />
             </Route>
           )}
