@@ -1,0 +1,16 @@
+.NoPostsFounded {
+  margin: 0 auto;
+  img {
+    height: 450px;
+    width: 100%;
+
+    @media (min-width: $ipad) {
+      width: 500px;
+    }
+
+    @media (min-width: $large) {
+      width: 700px;
+      height: 500px;
+    }
+  }
+}
