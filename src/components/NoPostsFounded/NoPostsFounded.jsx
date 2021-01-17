@@ -1,11 +1,13 @@
 import React from 'react';
 // Assets
 import noPostsIllustration from '../../assets/no-posts/no-posts-ill.svg';
+// Utils
+import { fadeInUp, fadeIn } from '../../utils/animateCss';
 
 export default function NoPostsFounded() {
   return (
     <div className='NoPostsFounded'>
-      <div>
+      <div className={fadeInUp}>
         <h2 className='NoPostsFounded__title'>Oops!</h2>
         <p className='NoPostsFounded__text'>
           No hay resultados.. {':('} <br />
@@ -19,7 +21,7 @@ export default function NoPostsFounded() {
         </div>
       </div>
       <img
-        className='NoPostsFounded__img'
+        className={fadeIn + ' NoPostsFounded__img'}
         src={noPostsIllustration}
         alt='no-posts-founded'
       />
