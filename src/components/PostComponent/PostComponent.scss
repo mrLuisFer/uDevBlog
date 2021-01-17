@@ -51,6 +51,7 @@
 
     @media (min-width: $ipad) {
       padding: 1.5rem;
+      width: 100%;
     }
 
     &-title {
@@ -62,6 +63,11 @@
       @media (min-width: $ipad) {
         font-size: 1.5rem;
         margin-bottom: 1.1rem;
+      }
+
+      &:hover {
+        @include text-underline(var(--secundario));
+        cursor: pointer;
       }
     }
 

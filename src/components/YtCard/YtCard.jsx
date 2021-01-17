@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 // Channels
 import channelsData from './_channels.json';
 // Assets
 import ytAvatar from '../../assets/ytCard/avatar-min.png';
+// Utils
+import { truncate } from '../../utils/truncateFunction/truncateFunction';
 
 export default function YtCard() {
   const [channelIndex, setChannelIndex] = useState(0);
@@ -28,7 +30,7 @@ export default function YtCard() {
 
   return (
     <>
-      <h1>Conocer mas!</h1>
+      <h1 className='YtCard__title'>Conocer mas!</h1>
       <div className='YtCard'>
         <span onClick={handleSubsIndex} className='YtCard__arrow'>
           <i className='fas fa-angle-left'></i>
@@ -47,7 +49,7 @@ export default function YtCard() {
             <h3 className='YtCard__container__title'>
               {channel === undefined || channel === null
                 ? 'No Youtuber'
-                : channel?.title}
+                : truncate(channel?.title, 17)}
             </h3>
           </div>
           <a

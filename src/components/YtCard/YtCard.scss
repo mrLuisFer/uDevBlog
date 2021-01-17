@@ -7,22 +7,31 @@
     border-radius: var(--radius);
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1.5rem 1.3rem;
+    justify-content: space-evenly;
     transition: var(--transition);
+    padding: 1.5rem 0;
+
+    @media (min-width: $laptop) {
+      padding: 1.5rem 1.3rem;
+      justify-content: center;
+    }
 
     &:hover {
       box-shadow: 1.5px 1.5px 6px var(--shadow-color);
     }
 
     &__arrow {
-      font-size: 2rem;
+      font-size: 1.5rem;
       cursor: pointer;
       color: var(--secundario);
     }
 
     &__container {
-      padding: 0 1.5rem;
+      padding: 0.7rem;
+
+      @media (min-width: $laptop) {
+        padding: 0 1.5rem;
+      }
 
       &-profile {
         display: flex;
@@ -32,33 +41,52 @@
       }
 
       &__avatar {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
+
+        @media (min-width: $laptop) {
+          width: 50px;
+          height: 50px;
+        }
       }
 
       &__title {
-        margin-left: 0.5rem;
         font-weight: 500;
+        margin-left: 0.4rem;
+        font-size: 1rem;
+
+        @media (min-width: $laptop) {
+          margin-left: 0.5rem;
+        }
       }
 
       #YtCard__link {
         color: var(--white);
         text-decoration: none;
-        font-size: 0.9rem;
-        column-gap: 0.7rem;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: space-evenly;
         border-radius: var(--radius);
-        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        column-gap: 0.45rem;
+        padding: 0.6rem;
+
+        @media (min-width: $laptop) {
+          padding: 0.6rem 0.8rem;
+          column-gap: 0.7rem;
+        }
 
         @include no-select;
 
         i {
-          font-size: 1.3rem;
+          font-size: 1rem;
           display: block;
+
+          @media (min-width: $laptop) {
+            font-size: 1.3rem;
+          }
         }
       }
 
@@ -72,6 +100,15 @@
       &__no-active {
         background: #9c9c9c;
       }
+    }
+  }
+
+  &__title {
+    display: none;
+
+    @media (min-width: $large) {
+      display: block;
+      font-size: 1.5rem;
     }
   }
 }

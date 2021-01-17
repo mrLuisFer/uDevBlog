@@ -47,8 +47,13 @@
   }
 
   &__aside {
-    margin-left: 2rem;
-    width: 190px;
+    display: none;
+
+    @media (min-width: $large) {
+      display: block;
+      margin-left: 2rem;
+      width: 190px;
+    }
 
     @media (min-width: $laptop) {
       width: 280px;

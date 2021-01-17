@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // Components
 import PostComponent from '../PostComponent/PostComponent';
 import BtnToTop from '../BtnToTop/BtnToTop';
@@ -6,15 +6,17 @@ import SideBar from '../SideBar/SideBar';
 import YtCard from '../YtCard/YtCard';
 
 // Utils
-import {fadeIn} from '../../utils/animateCss/index';
-// Hooks
-import {useWindow} from '../../hooks/useWindow/useWindow';
-
-// Ejemplo de como manejaremos los post con una api o con jsons
-import homePosts from '../../posts/homePosts.json';
+import { fadeIn } from '../../utils/animateCss/index';
+import { fetchingPosts } from '../../utils/fetchingPosts/fetchingPosts';
 
 export default function HomePosts() {
-  const windowSize = useWindow();
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetchingPosts(setPosts);
+  }, []);
+
+  console.log(posts);
 
   return (
     <>
@@ -22,27 +24,24 @@ export default function HomePosts() {
         <h1 className='HomePosts__title'>📝Posts</h1>
         <div className='HomePosts__flex'>
           <div className='HomePosts__content'>
-            {homePosts.map(({title, description, id, categories, img}) => (
+            {posts?.map((post) => (
               <PostComponent
-                key={id}
-                imgUrl={img}
-                title={title}
-                description={description}
-                categories={categories}
-                id={id}
+                key={post._id}
+                imgUrl={post.img}
+                title={post.title}
+                description={post.description}
+                categories={post.categories}
+                id={post._id}
               />
             ))}
           </div>
-          {windowSize >= 1024 ? (
-            <aside className='HomePosts__aside'>
-              <SideBar />
-              <div>
-                <YtCard />
-              </div>
-            </aside>
-          ) : (
-            ''
-          )}
+          {/* El aside se muestra al tamaño 1024px de la pantalla */}
+          <aside className='HomePosts__aside'>
+            <SideBar />
+            <div>
+              <YtCard />
+            </div>
+          </aside>
         </div>
       </div>
       <BtnToTop />
