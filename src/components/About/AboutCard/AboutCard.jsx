@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Utils
-import {fadeIn} from '../../utils/animateCss/index';
+import {fadeIn} from '../../../utils/animateCss/index';
 
     export default function AboutCard(props){
     return (
