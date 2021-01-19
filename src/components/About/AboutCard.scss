@@ -1,7 +1,47 @@
-.AboutCard__container{
-    margin-top: 4rem;
+.AboutCard{
+    display: flexbox;
+    margin: 5rem 0;
+    text-align: center;
+    
+    @media (min-width: $laptop) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        right: 50%;
+        }
+
+    .AboutCard__container{
+        width: 20rem;
+        height: auto;
+        padding: 2rem;
+        background-color: var(--terciario-2);
+        border-radius: 1rem;
+        box-shadow: 0 7px 11px 0 var(--shadow-color);
+    }
 
     .AboutCard__image-img{
         border-radius: 100%;
     }
+
+    .AboutCard__text{
+        margin: 23px;
+    }
+
+    .AboutCard__text-title{
+        margin-bottom: 1.5rem;
+    }
+
+    .AboutCard__social{
+        text-decoration: none;
+        width: 10px;
+        height: auto;
+        color: var(--white);
+        border-radius: 100%;
+        background-color: var(--principal);
+        margin: 0px .5rem;
+        padding: .3rem;
+    }
+
+   
+
 }
