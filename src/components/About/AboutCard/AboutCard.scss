@@ -1,43 +1,29 @@
-.AboutCard{
-    display: flexbox;
-    align-items: center;
-    margin: 5rem 0px;
-    text-align: center;
+.AboutCard {
+  text-align: center;
+
+  width: 20rem;
+  padding: 2rem;
+  background-color: var(--secundario-2);
+  border-radius: 1rem;
+  box-shadow: 0 7px 11px 0 var(--shadow-color);
+
+  &__image-img {
+    border-radius: 100%;
+  }
+
+  &__text {
+    margin: 23px;
+  }
+
+  &__text-title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__social {
+    text-decoration: none;
     color: var(--white);
-
-    @media (min-width: $large) {
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-    
-    &__container{
-        width: 30%;
-        padding: 2rem;
-        background-color: var(--secundario-2);
-        border-radius: 1rem;
-        box-shadow: 0 7px 11px 0 var(--shadow-color);
-
-   
-    }
-
-    &__image-img{
-        border-radius: 100%;
-    }
-
-    &__text{
-        margin: 23px;
-    }
-
-    &__text-title{
-        margin-bottom: 1.5rem;
-    }
-
-    &__social{
-        text-decoration: none;
-        color: var(--white);
-        font-size: 1.25rem;
-        margin: 0 .5rem;
-        padding: .4rem .6rem;
-        
-    }
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+    padding: 0.4rem 0.6rem;
+  }
 }
