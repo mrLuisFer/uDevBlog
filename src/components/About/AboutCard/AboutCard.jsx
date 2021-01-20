@@ -1,11 +1,11 @@
 import React from 'react'
 
 // Utils
-import {fadeIn} from '../../../utils/animateCss/index';
+/*import {fadeIn} from '../../../utils/animateCss/index';*/
 
     export default function AboutCard({name, text, social1, social2, social3}){
     return (
-        <div className={fadeIn + 'AboutCard'}>
+        <div className= 'AboutCard'>
             <div className="AboutCard__container">
                 <div className="AboutCard__image">
                 <img src='https://picsum.photos/100' className="AboutCard__image-img"></img>
@@ -16,8 +16,8 @@ import {fadeIn} from '../../../utils/animateCss/index';
                 </div>
                 <div>
                 <a href={social1} className="AboutCard__social"><i className="fab fa-linkedin-in"></i></a>
-                <a href={social2} className="AboutCard__social"><i className="fab fa-linkedin-in"></i></a>
-                <a href={social3} className="AboutCard__social"><i className="fab fa-linkedin-in"></i></a>
+                <a href={social2} className="AboutCard__social"><i className="fab fa-github"></i></a>
+                <a href={social3} className="AboutCard__social"><i className="fas fa-user-plus"></i></a>
                 </div>
             </div>
         </div>
