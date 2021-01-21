@@ -1,9 +1,11 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 // Assets
-import {fadeInUpBig} from '../../utils/animateCss/index';
+import { fadeInUpBig } from '../../utils/animateCss/index';
 // Utils
-import {truncate} from '../../utils/truncateFunction/truncateFunction';
+import { truncate } from '../../utils/truncateFunction/truncateFunction';
+// Hoooks
+import { useWindow } from '../../hooks/useWindow/useWindow';
 
 export default function PostComponent({
   imgUrl,
@@ -14,7 +16,9 @@ export default function PostComponent({
 }) {
   // aqui calcula el ancho de la pantalla par poder recortar mas o menos texto
   let length;
-  const windowWidth = window.innerWidth;
+  // const windowWidth = window.innerWidth;
+  const windowWidth = useWindow();
+
   if (windowWidth >= 700) {
     length = '121';
   } else if (windowWidth >= 1024) {

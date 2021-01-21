@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 // Components
-import BtnToTop from '../BtnToTop/BtnToTop';
 import SideBar from '../SideBar/SideBar';
 import YtCard from '../YtCard/YtCard';
 import NoPostsFounded from '../NoPostsFounded/NoPostsFounded';
@@ -36,7 +35,6 @@ export default function HomePosts() {
           </aside>
         </div>
       </div>
-      <BtnToTop />
     </>
   );
 }

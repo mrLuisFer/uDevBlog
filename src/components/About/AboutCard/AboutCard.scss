@@ -1,29 +1,67 @@
 .AboutCard {
   text-align: center;
-
   width: 20rem;
-  padding: 2rem;
-  background-color: var(--secundario-2);
+  padding: 1.5rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 7px 11px 0 var(--shadow-color);
+  margin: 3rem 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%235f90ee' fill-opacity='0.08'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: var(--secundario);
+  transition: var(--transition);
 
-  &__image-img {
-    border-radius: 100%;
+  @media (min-width: $ipad) {
+    width: 21.5rem;
+  }
+
+  @media (min-width: $large) {
+    width: 23rem;
+  }
+
+  &:hover {
+    background: var(--secundario-light);
+  }
+
+  &__profile {
+    @media (min-width: $ipad) {
+      display: flex;
+      align-items: center;
+    }
+
+    &-img {
+      border-radius: 50%;
+      // border-radius: var(--radius);
+    }
+
+    &-title {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+
+      @media (min-width: $ipad) {
+        margin-bottom: 0;
+        margin-left: 1rem;
+        text-align: left;
+        font-size: 1.4rem;
+      }
+    }
   }
 
   &__text {
     margin: 23px;
-  }
-
-  &__text-title {
-    margin-bottom: 1.5rem;
+    color: var(--grey);
   }
 
   &__social {
     text-decoration: none;
     color: var(--white);
-    font-size: 1.25rem;
-    margin: 0 0.5rem;
-    padding: 0.4rem 0.6rem;
+    font-size: 1.3rem;
+    margin: 0.4rem 0.6rem;
+    padding: 0.2rem 0.3rem;
+    transition: var(--transition);
+    border-radius: var(--radius);
+
+    &:hover {
+      background: var(--terciario-2);
+      color: var(--principal);
+    }
   }
 }
