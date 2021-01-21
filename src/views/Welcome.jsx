@@ -1,9 +1,9 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 // Assets
 import welcomeBlogPost from '../assets/welcome-illustration/welcome-blog-post.svg';
 // Utils
-import {fadeInUp} from '../utils/animateCss';
+import { fadeInUp } from '../utils/animateCss';
 
 export default function WelcomeView() {
   let history = useHistory();
@@ -52,12 +52,12 @@ export default function WelcomeView() {
           >
             Repositorio
           </a>
-          <a className='WelcomeView__links-div__link' href='/'>
+          <Link className='WelcomeView__links-div__link' to='/'>
             Conocer Mas
-          </a>
-          <a className='WelcomeView__links-div__link' href='/'>
+          </Link>
+          <Link className='WelcomeView__links-div__link' to='/about'>
             Integrantes
-          </a>
+          </Link>
         </div>
       </div>
     </div>

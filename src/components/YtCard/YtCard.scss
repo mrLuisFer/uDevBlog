@@ -24,6 +24,11 @@
       font-size: 1.5rem;
       cursor: pointer;
       color: var(--secundario);
+      transition: var(--transition);
+
+      &:hover {
+        transform: scale(1.04);
+      }
     }
 
     &__container {

@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function HeaderDesktop() {
   return (
     <div className='HeaderDesktop'>
-      <a href='/home' className='HeaderDesktop__link'>
+      <Link to='/home' className='HeaderDesktop__link'>
         Home
-      </a>
-      <a href='/home' className='HeaderDesktop__link'>
+      </Link>
+      <Link to='/home' className='HeaderDesktop__link'>
         Comunidades
-      </a>
-      <a href='/home' className='HeaderDesktop__link'>
+      </Link>
+      <Link to='/home' className='HeaderDesktop__link'>
         Descubrir
-      </a>
-      <a href='/About' className='HeaderDesktop__link'>
+      </Link>
+      <Link to='/About' className='HeaderDesktop__link'>
         About
-      </a>
+      </Link>
     </div>
   );
 }
