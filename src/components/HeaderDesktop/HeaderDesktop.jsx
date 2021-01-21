@@ -13,7 +13,7 @@ export default function HeaderDesktop() {
       <Link to='/home' className='HeaderDesktop__link'>
         Descubrir
       </Link>
-      <Link to='/About' className='HeaderDesktop__link'>
+      <Link to='/about' className='HeaderDesktop__link'>
         About
       </Link>
     </div>

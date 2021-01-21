@@ -1,13 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Utils
-import {slideInDown} from '../../utils/animateCss';
+import { slideInDown } from '../../utils/animateCss';
 
 // Components
 import NavBar from '../NavBar/NavBar';
 
-export default function HeaderMenuMobile({handleMenu, menu}) {
+export default function HeaderMenuMobile({ handleMenu, menu }) {
   return (
     <div className={slideInDown + ' HeaderMenuMobile'}>
       <NavBar handleMenu={handleMenu} menu={menu} />
@@ -27,7 +27,7 @@ export default function HeaderMenuMobile({handleMenu, menu}) {
         </Link>
       </p>
       <p className='HeaderMenuMobile__anchor'>
-        <Link to='/About' onClick={handleMenu}>
+        <Link to='/about' onClick={handleMenu}>
           About
         </Link>
       </p>

@@ -15,8 +15,10 @@ export default function HomePosts() {
 
   useEffect(() => {
     fetchingPosts(setPosts);
-    if (posts.length >= 0) {
+    if (posts.length > 0) {
       setFindPosts(false);
+    } else {
+      setFindPosts(true);
     }
   }, []);
 

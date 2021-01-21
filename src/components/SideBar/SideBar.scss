@@ -16,6 +16,11 @@
     position: relative;
     right: 0;
     margin-bottom: 4rem;
+    transition: var(--transition);
+
+    &:hover {
+      filter: brightness(1.25);
+    }
 
     &__title {
       font-size: 1.4rem;

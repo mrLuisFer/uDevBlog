@@ -39,7 +39,7 @@ function App() {
           {menu ? (
             <HeaderMenuMobile handleMenu={handleMenu} menu={menu} />
           ) : (
-            <Route path='/About'>
+            <Route path='/about'>
               <Header menu={menu} handleMenu={handleMenu} />
               <About />
               <BtnToTop />

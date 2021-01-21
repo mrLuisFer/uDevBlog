@@ -10,7 +10,8 @@ export default function NoPostsFounded() {
       <div className={fadeInUp}>
         <h2 className='NoPostsFounded__title'>Oops!</h2>
         <p className='NoPostsFounded__text'>
-          No hay resultados.. {':('} <br />
+          No hay resultados...
+          <br />
           <span className='NoPostsFounded__text-span'>
             Pero puedes buscar en estos lugares {':D'}
           </span>
