@@ -1,0 +1,20 @@
+.AboutText {
+  text-align: center;
+  padding: 3% 6%;
+  line-height: 1.6875rem;
+
+  @media (min-width: $large) {
+    padding: 2% 4%;
+    text-align: left;
+  }
+
+  &__cards-container {
+    display: flex;
+    @media (min-width: $large) {
+      justify-content: space-around;
+      margin: 5rem 0px;
+      color: var(--white);
+      align-items: center;
+    }
+  }
+}

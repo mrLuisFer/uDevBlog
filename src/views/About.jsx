@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Components
-import AboutText from '../components/About/AboutText'
+import AboutText from '../components/About/AboutText/AboutText'
 
 const About = () => {
     return (
