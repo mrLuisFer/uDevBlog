@@ -6,18 +6,20 @@ import { slideInDown } from '../../utils/animateCss';
 
 // Components
 import NavBar from '../NavBar/NavBar';
+// Routes
+import { routes } from '../../routes/routes';
 
 export default function HeaderMenuMobile({ handleMenu, menu }) {
   return (
     <div className={slideInDown + ' HeaderMenuMobile'}>
       <NavBar handleMenu={handleMenu} menu={menu} />
       <p className='HeaderMenuMobile__anchor'>
-        <Link to='/home' onClick={handleMenu}>
+        <Link to={routes.home} onClick={handleMenu}>
           Home
         </Link>
       </p>
       <p className='HeaderMenuMobile__anchor'>
-        <Link to='/home' onClick={handleMenu}>
+        <Link to={routes.comunidades} onClick={handleMenu}>
           Comunidades
         </Link>
       </p>
@@ -27,7 +29,7 @@ export default function HeaderMenuMobile({ handleMenu, menu }) {
         </Link>
       </p>
       <p className='HeaderMenuMobile__anchor'>
-        <Link to='/about' onClick={handleMenu}>
+        <Link to={routes.about} onClick={handleMenu}>
           About
         </Link>
       </p>

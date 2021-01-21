@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// Routes
+import { routes } from '../../routes/routes';
 
 export default function HeaderDesktop() {
   return (
     <div className='HeaderDesktop'>
-      <Link to='/home' className='HeaderDesktop__link'>
+      <Link to={routes.home} className='HeaderDesktop__link'>
         Home
       </Link>
-      <Link to='/home' className='HeaderDesktop__link'>
+      <Link to={routes.comunidades} className='HeaderDesktop__link'>
         Comunidades
       </Link>
       <Link to='/home' className='HeaderDesktop__link'>
         Descubrir
       </Link>
-      <Link to='/about' className='HeaderDesktop__link'>
+      <Link to={routes.about} className='HeaderDesktop__link'>
         About
       </Link>
     </div>

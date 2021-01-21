@@ -4,6 +4,8 @@ import { useHistory, Link } from 'react-router-dom';
 import welcomeBlogPost from '../assets/welcome-illustration/welcome-blog-post.svg';
 // Utils
 import { fadeInUp } from '../utils/animateCss';
+// Routes
+import { routes } from '../routes/routes';
 
 export default function WelcomeView() {
   let history = useHistory();
@@ -52,10 +54,13 @@ export default function WelcomeView() {
           >
             Repositorio
           </a>
-          <Link className='WelcomeView__links-div__link' to='/'>
+          <Link
+            className='WelcomeView__links-div__link'
+            to={routes.comunidades}
+          >
             Conocer Mas
           </Link>
-          <Link className='WelcomeView__links-div__link' to='/about'>
+          <Link className='WelcomeView__links-div__link' to={routes.about}>
             Integrantes
           </Link>
         </div>

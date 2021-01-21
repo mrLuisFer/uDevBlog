@@ -8,11 +8,13 @@ import logoHorizontal from '../../assets/logo/logoHorizontal.svg';
 import { fadeIn } from '../../utils/animateCss';
 // Components
 import HeaderDesktop from '../HeaderDesktop/HeaderDesktop';
+// Routes
+import { routes } from '../../routes/routes';
 
 export default function NavBar({ menu, handleMenu }) {
   return (
     <div className={fadeIn + ' NavBar'}>
-      <Link to='/home' className='NavBar__logo'>
+      <Link to={routes.home} className='NavBar__logo'>
         <img
           src={menu ? logoHorizontal : logoHorizontalNoBg}
           className='NavBar__logo-img'
