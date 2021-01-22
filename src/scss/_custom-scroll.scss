@@ -3,21 +3,21 @@
 */
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
+// ::-webkit-scrollbar-track {
+//   border-radius: 10px;
+// }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--secundario);
-  border-radius: var(--radius);
+  // border-radius: var(--radius);
+  background: var(--principal);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--principal);
+  background: var(--terciario);
 }

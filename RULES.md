@@ -4,17 +4,20 @@
 
 - Los componentes seran declarados con funciones normales `function component()`
 
-- Los metodos dentro de los componentes seran declarados con arrow function `const fun = () => {}`
+- Los metodos dentro de los componentes seran declarados con arrow function
+  `const fun = () => {}`
 
 - Deben aniadir un guion bajo a todos los archivos scss, excepto el `index.scss`
 
-- Los archivos scss deben llevar el mismo nombre que el componente que tendra los estilos
+- Los archivos scss deben llevar el mismo nombre que el componente que tendra
+  los estilos
 
 - Para componentes la extension recomendada es `.jsx`
 
 - El contenido en general lleva un 5% de padding a los lados
 
-- Porfavor agrega comentarios de tu codigo y si quieres explica un poco el como funciona
+- Porfavor agrega comentarios de tu codigo y si quieres explica un poco el como
+  funciona
 
 - Las variables en los archivos scss seran del css normal `var(--nameOf)`
 
@@ -22,6 +25,7 @@
 
 - El diseño inicial en mobile es `#375px`
 
-- Las animaciones provenientes de animate.css deben ser exportadas desde `utils/animateCss/index`
+- Las animaciones provenientes de animate.css deben ser exportadas desde
+  `utils/animateCss/index`
 
-- ## La rama features es como si fuera la main donde se haran los pr para revisar que caracteristicas no afectaran a la rama main
+- ## La rama Develop es como si fuera la main donde se haran los pr para revisar que caracteristicas no afectaran a la rama main

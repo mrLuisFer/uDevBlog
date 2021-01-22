@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 // Routes
 import { routes } from '../../routes/routes';
-// import markdown from './test.md';
 
 export default function Article() {
   const [article, setArticle] = useState('');
