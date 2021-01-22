@@ -11,7 +11,7 @@ import { routes } from '../../routes/routes';
 
 export default function HeaderMenuMobile({ handleMenu, menu }) {
   return (
-    <div className={slideInDown + ' HeaderMenuMobile'}>
+    <menu className={slideInDown + ' HeaderMenuMobile'}>
       <NavBar handleMenu={handleMenu} menu={menu} />
       <p className='HeaderMenuMobile__anchor'>
         <Link to={routes.home} onClick={handleMenu}>
@@ -33,6 +33,6 @@ export default function HeaderMenuMobile({ handleMenu, menu }) {
           About
         </Link>
       </p>
-    </div>
+    </menu>
   );
 }

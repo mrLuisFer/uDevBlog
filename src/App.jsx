@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      <div className='App'>
+      <main className='App'>
         <Switch>
           <Route exact path='/'>
             <WelcomeView />
@@ -52,7 +52,7 @@ function App() {
             <Article />
           </Route>
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 }

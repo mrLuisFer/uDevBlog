@@ -24,19 +24,19 @@ export default function HomePosts() {
 
   return (
     <>
-      <div className={fadeIn + ' HomePosts'}>
+      <section className={fadeIn + ' HomePosts'}>
         <h1 className='HomePosts__title'>📝Posts</h1>
         <div className='HomePosts__flex'>
           {findPosts ? <NoPostsFounded /> : <GetPosts posts={posts} />}
           {/* El aside se muestra al tamaño 1024px de la pantalla */}
           <aside className='HomePosts__aside'>
             <SideBar />
-            <div>
+            <article>
               <YtCard />
-            </div>
+            </article>
           </aside>
         </div>
-      </div>
+      </section>
     </>
   );
 }

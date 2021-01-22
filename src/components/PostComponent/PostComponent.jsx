@@ -35,7 +35,10 @@ export default function PostComponent({
   };
 
   return (
-    <div className={fadeInUpBig + ' PostComponent'} onClick={handleOpenArticle}>
+    <section
+      className={fadeInUpBig + ' PostComponent'}
+      onClick={handleOpenArticle}
+    >
       <img src={imgUrl} alt={title} className='PostComponent__img' />
       <div className='PostComponent__content'>
         <h3 className='PostComponent__content-title'>{title}</h3>
@@ -50,6 +53,6 @@ export default function PostComponent({
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -22,11 +22,11 @@ export default function Article() {
   return (
     <>
       {parseInt(id) ? (
-        <div className='Article'>
+        <article className='Article'>
           <div
             dangerouslySetInnerHTML={{ __html: article.article_content }}
           ></div>
-        </div>
+        </article>
       ) : (
         <div>
           <p>No existe el articulo :I</p>

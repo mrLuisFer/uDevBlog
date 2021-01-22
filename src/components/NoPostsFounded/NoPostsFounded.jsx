@@ -6,7 +6,7 @@ import { fadeInUp, fadeIn } from '../../utils/animateCss';
 
 export default function NoPostsFounded() {
   return (
-    <div className='NoPostsFounded'>
+    <section className='NoPostsFounded'>
       <div className={fadeInUp}>
         <h2 className='NoPostsFounded__title'>Oops!</h2>
         <p className='NoPostsFounded__text'>
@@ -26,6 +26,6 @@ export default function NoPostsFounded() {
         src={noPostsIllustration}
         alt='no-posts-founded'
       />
-    </div>
+    </section>
   );
 }

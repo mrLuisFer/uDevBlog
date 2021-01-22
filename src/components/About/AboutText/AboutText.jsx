@@ -11,7 +11,7 @@ import { luis, catalina, michael } from './aboutInfo';
 
 export default function AboutText() {
   return (
-    <div className={fadeIn + 'AboutText'}>
+    <section className={fadeIn + 'AboutText'}>
       <h1 className='AboutText__title'>
         <i className='fas fa-align-left'></i>About
       </h1>
@@ -40,6 +40,6 @@ export default function AboutText() {
           <AboutCard {...michael} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

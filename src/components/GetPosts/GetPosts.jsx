@@ -5,7 +5,7 @@ import PostComponent from '../PostComponent/PostComponent';
 export default function GetPosts({ posts }) {
   console.log(posts);
   return (
-    <div className='GetPosts'>
+    <article className='GetPosts'>
       {posts?.map((post) => (
         <PostComponent
           key={post._id}
@@ -16,6 +16,6 @@ export default function GetPosts({ posts }) {
           id={post._id}
         />
       ))}
-    </div>
+    </article>
   );
 }

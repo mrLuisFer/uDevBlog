@@ -5,7 +5,7 @@ import { routes } from '../../routes/routes';
 
 export default function HeaderDesktop() {
   return (
-    <div className='HeaderDesktop'>
+    <nav className='HeaderDesktop'>
       <Link to={routes.home} className='HeaderDesktop__link'>
         Home
       </Link>
@@ -18,6 +18,6 @@ export default function HeaderDesktop() {
       <Link to={routes.about} className='HeaderDesktop__link'>
         About
       </Link>
-    </div>
+    </nav>
   );
 }

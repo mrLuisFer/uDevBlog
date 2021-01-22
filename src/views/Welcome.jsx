@@ -15,7 +15,7 @@ export default function WelcomeView() {
   };
 
   return (
-    <div className='WelcomeView'>
+    <section className='WelcomeView'>
       <div className='WelcomeView__hero-illustration-div'>
         {/* Hero illustration */}
         <img
@@ -65,6 +65,6 @@ export default function WelcomeView() {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
