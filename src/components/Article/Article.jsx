@@ -22,11 +22,19 @@ export default function Article() {
   return (
     <>
       {parseInt(id) ? (
-        <article className='Article'>
-          <div
-            dangerouslySetInnerHTML={{ __html: article.article_content }}
-          ></div>
-        </article>
+        <section className='Article'>
+          <div className='Article__container'>
+            <Link to={routes.home}>
+              <i className='fas fa-arrow-left'></i>
+              Volver
+            </Link>
+            <div className='Article__container__line'></div>
+            <article
+              className='Article__container__content'
+              dangerouslySetInnerHTML={{ __html: article.article_content }}
+            ></article>
+          </div>
+        </section>
       ) : (
         <div>
           <p>No existe el articulo :I</p>

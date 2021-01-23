@@ -24,21 +24,36 @@ export default function AboutCard({
       </div>
       <div className='AboutCard__links'>
         {social1 ? (
-          <a href={social1} className='AboutCard__social'>
+          <a
+            href={social1}
+            className='AboutCard__social'
+            target='_blank'
+            rel='noreferrer'
+          >
             <i className={icon1}></i>
           </a>
         ) : (
           ''
         )}
         {social2 ? (
-          <a href={social2} className='AboutCard__social'>
+          <a
+            href={social2}
+            className='AboutCard__social'
+            target='_blank'
+            rel='noreferrer'
+          >
             <i className={icon2}></i>
           </a>
         ) : (
           ''
         )}
         {social3 ? (
-          <a href={social3} className='AboutCard__social'>
+          <a
+            href={social3}
+            className='AboutCard__social'
+            target='_blank'
+            rel='noreferrer'
+          >
             <i className={icon3}></i>
           </a>
         ) : (

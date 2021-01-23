@@ -13,6 +13,7 @@
     @include no-select;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     i {
       margin-right: 0.6rem;
@@ -20,7 +21,7 @@
     }
 
     @media (min-width: $large) {
-      text-align: left;
+      justify-content: flex-start;
     }
   }
 
