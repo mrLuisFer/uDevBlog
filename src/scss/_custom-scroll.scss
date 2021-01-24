@@ -7,14 +7,15 @@
 }
 
 /* Track */
-// ::-webkit-scrollbar-track {
-//   border-radius: 10px;
-// }
+::-webkit-scrollbar-track {
+  border-radius: var(--radius);
+  background: var(--dark-grey);
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  // border-radius: var(--radius);
-  background: var(--principal);
+  border-radius: var(--radius);
+  background: var(--terciario);
 }
 
 /* Handle on hover */
