@@ -18,7 +18,7 @@ const catalina = {
   icon1: 'fab fa-linkedin-in',
   social2: 'https://github.com/LCV13',
   icon2: 'fab fa-github',
-  text: 'Some Text',
+  text: 'Soy desarrolladora web frontend. Y el entusiasmo por hacer llegar el conocimiento a quienes se inician en nuestra area es la razón por la que me uní a uDevBlog y lo que nos motiva a todo el equipo para seguir creciendo este gran proyecto.',
 };
 
 const michael = {
