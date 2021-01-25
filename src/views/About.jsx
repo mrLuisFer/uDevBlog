@@ -1,14 +1,14 @@
 import React from 'react';
 
 //Components
-import AboutText from '../components/About/AboutText/AboutText'
+import AboutText from '../components/About/AboutText/AboutText';
 
 const About = () => {
-    return (
-        <div>
-            <AboutText/>
-        </div>
-    )
-}
+  return (
+    <section>
+      <AboutText />
+    </section>
+  );
+};
 
-export default About
+export default About;

@@ -1,21 +1,44 @@
-import React from 'react';
-import {useParams, Link} from 'react-router-dom';
-
-import markdown from './test.md';
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+// Routes
+import { routes } from '../../routes/routes';
 
 export default function Article() {
-  console.log(markdown);
+  const [article, setArticle] = useState('');
 
-  let {id} = useParams();
+  let { id } = useParams();
+
+  const fetchingArticle = async () => {
+    const res = await fetch(`http://localhost:4000/article/${id}`);
+    const data = await res.json();
+
+    setArticle(data);
+  };
+
+  useEffect(() => {
+    fetchingArticle();
+  }, []);
 
   return (
     <>
       {parseInt(id) ? (
-        <div>some {id}</div>
+        <section className='Article'>
+          <div className='Article__container'>
+            <Link to={routes.home}>
+              <i className='fas fa-arrow-left'></i>
+              Volver
+            </Link>
+            <div className='Article__container__line'></div>
+            <article
+              className='Article__container__content'
+              dangerouslySetInnerHTML={{ __html: article.article_content }}
+            ></article>
+          </div>
+        </section>
       ) : (
         <div>
           <p>No existe el articulo :I</p>
-          <Link to='/home'>Vayamos devuelta a casa</Link>
+          <Link to={routes.home}>Vayamos devuelta a casa</Link>
         </div>
       )}
     </>

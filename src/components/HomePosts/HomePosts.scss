@@ -29,6 +29,8 @@
       display: block;
       margin-left: 2rem;
       width: 190px;
+      position: static;
+      top: 0;
     }
 
     @media (min-width: $laptop) {

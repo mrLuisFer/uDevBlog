@@ -11,11 +11,12 @@ const faster = 'animate__faster';
 
 // estas son las animaciones que debes usar importandolas y usando el nombre de la variable
 const fadeIn = `${animated} animate__fadeIn `;
-const fadeInUp = `${animated} animate__fadeInUp ${fast}`;
+const fadeInUp = `${animated} animate__fadeInUp ${faster}`;
 const fadeInUpBig = `${animated} animate__fadeInUpBig ${faster}`;
 const fadeInRightBig = `${animated} animate__fadeInRightBig ${faster}`;
 const fadeInDownBig = `${animated} animate__fadeInDownBig ${faster}`;
 const slideInDown = `${animated} animate__slideInDown ${faster}`;
+const slideInUp = `${animated} animate__slideInUp ${fast}`;
 
 /* Aqui solo añade el nombre de la animacion para exportarla 
 y poder usarla en diferentes archivos */
@@ -26,4 +27,5 @@ export {
   fadeInRightBig,
   fadeInDownBig,
   slideInDown,
+  slideInUp,
 };

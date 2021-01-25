@@ -24,6 +24,11 @@
       font-size: 1.5rem;
       cursor: pointer;
       color: var(--secundario);
+      transition: var(--transition);
+
+      &:hover {
+        transform: scale(1.04);
+      }
     }
 
     &__container {
@@ -44,6 +49,7 @@
         width: 35px;
         height: 35px;
         border-radius: 50%;
+        @include no-select;
 
         @media (min-width: $laptop) {
           width: 50px;
@@ -95,6 +101,16 @@
         background: #ff0000;
         cursor: pointer;
         font-weight: 600;
+        position: relative;
+
+        &:hover {
+          @include after-button(
+            'Subscribete para conocer mas!',
+            3rem,
+            0,
+            0.9rem
+          );
+        }
       }
 
       &__no-active {

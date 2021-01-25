@@ -25,6 +25,13 @@
     &:hover {
       color: var(--secundario);
       text-shadow: 1px 1px 4px var(--terciario);
+
+      @include after-button(
+        'No te preocupes estamos trabajando para solucionarlo ;)',
+        -1.5rem,
+        1rem,
+        1rem
+      );
     }
   }
 

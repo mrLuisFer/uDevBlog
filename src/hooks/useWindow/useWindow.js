@@ -1,12 +1,12 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 
 export function useWindow() {
   const [windowZize, setWindowZize] = useState(0);
 
+  const windowWidth = window.innerWidth;
   useEffect(() => {
-    const windowWidth = window.innerWidth;
     setWindowZize(windowWidth);
-  }, []);
+  }, [windowWidth]);
 
   return windowZize;
 }

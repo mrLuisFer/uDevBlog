@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 // Components
-import BtnToTop from '../BtnToTop/BtnToTop';
 import SideBar from '../SideBar/SideBar';
 import YtCard from '../YtCard/YtCard';
 import NoPostsFounded from '../NoPostsFounded/NoPostsFounded';
@@ -16,27 +15,28 @@ export default function HomePosts() {
 
   useEffect(() => {
     fetchingPosts(setPosts);
-    if (posts.length > 0) {
+    if (posts.length > 0 && findPosts === true) {
       setFindPosts(false);
+    } else {
+      setFindPosts(true);
     }
   }, []);
 
   return (
     <>
-      <div className={fadeIn + ' HomePosts'}>
+      <section className={fadeIn + ' HomePosts'}>
         <h1 className='HomePosts__title'>📝Posts</h1>
         <div className='HomePosts__flex'>
           {findPosts ? <NoPostsFounded /> : <GetPosts posts={posts} />}
           {/* El aside se muestra al tamaño 1024px de la pantalla */}
           <aside className='HomePosts__aside'>
             <SideBar />
-            <div>
+            <article>
               <YtCard />
-            </div>
+            </article>
           </aside>
         </div>
-      </div>
-      <BtnToTop />
+      </section>
     </>
   );
 }

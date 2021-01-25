@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import HeaderMenuMobile from './components/HeaderMenuMobile/HeaderMenuMobile';
 import Article from './components/Article/Article';
+import BtnToTop from './components/BtnToTop/BtnToTop';
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      <div className='App'>
+      <main className='App'>
         <Switch>
           <Route exact path='/'>
             <WelcomeView />
@@ -30,6 +31,7 @@ function App() {
             <Route path='/home'>
               <Header menu={menu} handleMenu={handleMenu} />
               <HomePage />
+              <BtnToTop />
               <Footer />
             </Route>
           )}
@@ -37,9 +39,10 @@ function App() {
           {menu ? (
             <HeaderMenuMobile handleMenu={handleMenu} menu={menu} />
           ) : (
-            <Route path='/About'>
+            <Route path='/about'>
               <Header menu={menu} handleMenu={handleMenu} />
               <About />
+              <BtnToTop />
               <Footer />
             </Route>
           )}
@@ -49,7 +52,7 @@ function App() {
             <Article />
           </Route>
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 }
