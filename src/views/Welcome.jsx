@@ -11,7 +11,7 @@ export default function WelcomeView() {
   let history = useHistory();
 
   const pushToHome = () => {
-    history.push('/home');
+    history.push(`${routes.home}`);
   };
 
   return (

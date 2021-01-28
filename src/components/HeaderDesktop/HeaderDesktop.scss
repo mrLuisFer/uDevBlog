@@ -12,6 +12,7 @@
       text-decoration: none;
       color: var(--secundario);
       font-size: 1.05rem;
+      position: relative;
 
       &:hover {
         @include text-underline(var(--terciario));
@@ -20,6 +21,24 @@
 
       @media (min-width: $large) {
         font-size: 1.2rem;
+      }
+
+      &:hover {
+        &:nth-child(1) {
+          @include after-button('HomePosts', 1.9rem, -0.5rem);
+        }
+
+        &:nth-child(2) {
+          @include after-button('Comunidades de Programacion', 2.5em, -0.5rem);
+        }
+
+        &:nth-child(3) {
+          @include after-button('Noticias TI', 1.9rem, 0.3rem);
+        }
+
+        &:nth-child(4) {
+          @include after-button('Conocer Mas', 1.9rem, 0.3rem);
+        }
       }
     }
   }
