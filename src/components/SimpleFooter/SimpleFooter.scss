@@ -1,0 +1,117 @@
+.SimpleFooter {
+  padding: 5%;
+  background: var(--grey);
+
+  @media (min-width: $ipad) {
+    padding: 2%;
+  }
+
+  @media (min-width: $large) {
+    bottom: 0vh;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+
+    @media (min-width: $ipad) {
+      flex-wrap: nowrap;
+      width: auto;
+      justify-content: space-around;
+      column-gap: 8rem;
+    }
+
+    @media (min-width: $large) {
+      column-gap: 0;
+    }
+  }
+
+  &__textContainer {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+
+    @media (min-width: $large) {
+      width: 250px;
+      margin: 0;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  &__linksContainer {
+    margin: 0 auto;
+    width: 350px;
+
+    @media (min-width: $large) {
+      margin: 0;
+      width: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    &-line {
+      background: var(--principal);
+      width: 200px;
+      height: 5px;
+      display: block;
+      margin: .5rem auto;
+
+      @media (min-width: $ipad) {
+        margin: 0;
+      }
+
+      @media (min-width: $large) {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 5px;
+        height: 55px;
+      }
+    }
+
+    p {
+      margin-bottom: 2rem;
+      line-height: 1.5;
+
+      @media (min-width: $ipad) {
+        text-align: left;
+      }
+
+      @media (min-width: $large) {
+        margin: 0;
+        width: 280px;
+        position: relative;
+      }
+    }
+
+    div {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (min-width: $large) {
+        column-gap: 1.5rem;
+        margin-left: 3rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--principla);
+        
+        &:hover {
+          @include text-underline(var(--terciario))
+        }
+      }
+    }
+  }
+}
