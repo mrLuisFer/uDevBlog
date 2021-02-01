@@ -4,6 +4,9 @@
 
   @media (min-width: $ipad) {
     padding: 2%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   @media (min-width: $large) {
@@ -43,6 +46,8 @@
 
     p {
       line-height: 1.5;
+      color: var(--secundario);
+      font-weight: 500;
     }
   }
 
@@ -81,6 +86,7 @@
     p {
       margin-bottom: 2rem;
       line-height: 1.5;
+      font-weight: 300;
 
       @media (min-width: $ipad) {
         text-align: left;
@@ -106,8 +112,9 @@
 
       a {
         text-decoration: none;
-        color: var(--principla);
-        
+        color: var(--principal);
+        @include no-select;
+
         &:hover {
           @include text-underline(var(--terciario))
         }

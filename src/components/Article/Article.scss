@@ -11,7 +11,7 @@
     
     @media (min-width: $large){
       max-width: 1000px;
-      // margin: 0 auto;
+     //  margin: 0 auto;
     }
 
     a {
@@ -55,9 +55,12 @@
     &__content {
       margin-top: 1.5rem;
       color: var(--dark);
+      line-height: 1.5;
+      font-size: 1rem;
 
       h1 {
         color: var(--principal);
+        font-size: 1.1rem;
       }
 
       code {
@@ -68,11 +71,11 @@
 
       img {
         margin: 2rem auto;
-        width: 200px;
+        width: 300px;
         display: block;
 
         @media (min-width: $large) {
-          max-width: 600px;
+          width: 600px;
         }
       }
 
