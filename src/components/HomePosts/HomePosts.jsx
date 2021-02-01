@@ -11,14 +11,14 @@ import { fetchingPosts } from '../../utils/fetchingPosts/fetchingPosts';
 
 export default function HomePosts() {
   const [posts, setPosts] = useState([]);
-  const [findPosts, setFindPosts] = useState(true);
+  const [findPosts, setFindPosts] = useState(false);
 
   useEffect(() => {
     fetchingPosts(setPosts);
-    if (posts.length > 0 && findPosts === true) {
+    if (posts.length > 0) {
       setFindPosts(false);
     } else {
-      setFindPosts(true);
+      setFindPosts(false);
     }
   }, []);
 

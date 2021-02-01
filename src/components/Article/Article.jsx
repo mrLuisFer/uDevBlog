@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 // Routes
 import { routes } from '../../routes/routes';
+// Components
+import SimpleFooter from '../SimpleFooter/SimpleFooter.jsx';
 
 export default function Article() {
   const [article, setArticle] = useState('');
@@ -29,6 +31,7 @@ export default function Article() {
               Volver
             </Link>
             <div className='Article__container__line'></div>
+            <h1 className='Article__title'>{article.title}</h1>
             <article
               className='Article__container__content'
               dangerouslySetInnerHTML={{ __html: article.article_content }}
@@ -41,6 +44,7 @@ export default function Article() {
           <Link to={routes.home}>Vayamos devuelta a casa</Link>
         </div>
       )}
+      <SimpleFooter />
     </>
   );
 }

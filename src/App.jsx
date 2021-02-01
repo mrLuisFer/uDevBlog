@@ -49,6 +49,7 @@ function App() {
 
           {/* Esto redirecciona hacia el articulo que hayan clickeado */}
           <Route path={`/article/:id`}>
+            <Header menu={menu} handleMenu={handleMenu} />
             <Article />
           </Route>
         </Switch>
