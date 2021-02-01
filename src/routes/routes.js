@@ -6,4 +6,5 @@ export const routes = {
   home: '/home',
   about: '/about',
   comunidades: '/comunidades',
+  descubrir: '/descubrir',
 };

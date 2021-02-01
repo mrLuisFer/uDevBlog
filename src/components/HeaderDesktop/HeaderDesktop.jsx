@@ -12,7 +12,7 @@ export default function HeaderDesktop() {
       <Link to={routes.comunidades} className='HeaderDesktop__link'>
         Comunidades
       </Link>
-      <Link to={routes.home} className='HeaderDesktop__link'>
+      <Link to={routes.descubrir} className='HeaderDesktop__link'>
         Descubrir
       </Link>
       <Link to={routes.about} className='HeaderDesktop__link'>

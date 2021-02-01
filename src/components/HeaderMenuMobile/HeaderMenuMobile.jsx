@@ -24,7 +24,7 @@ export default function HeaderMenuMobile({ handleMenu, menu }) {
         </Link>
       </p>
       <p className='HeaderMenuMobile__anchor'>
-        <Link to='/home' onClick={handleMenu}>
+        <Link to={routes.descubrir} onClick={handleMenu}>
           Descubrir
         </Link>
       </p>

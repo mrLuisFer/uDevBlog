@@ -10,6 +10,9 @@ import Header from './components/Header/Header';
 import HeaderMenuMobile from './components/HeaderMenuMobile/HeaderMenuMobile';
 import Article from './components/Article/Article';
 import BtnToTop from './components/BtnToTop/BtnToTop';
+import Descubrir from './views/Descubrir';
+// Routes
+import { routes } from './routes/routes';
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -22,13 +25,13 @@ function App() {
     <Router>
       <main className='App'>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path={routes.root}>
             <WelcomeView />
           </Route>
           {menu ? (
             <HeaderMenuMobile handleMenu={handleMenu} menu={menu} />
           ) : (
-            <Route path='/home'>
+            <Route path={routes.home}>
               <Header menu={menu} handleMenu={handleMenu} />
               <HomePage />
               <BtnToTop />
@@ -39,11 +42,21 @@ function App() {
           {menu ? (
             <HeaderMenuMobile handleMenu={handleMenu} menu={menu} />
           ) : (
-            <Route path='/about'>
+            <Route path={routes.about}>
               <Header menu={menu} handleMenu={handleMenu} />
               <About />
               <BtnToTop />
               <Footer />
+            </Route>
+          )}
+
+          {menu ? (
+            <HeaderMenuMobile handleMenu={handleMenu} menu={menu} />
+          ) : (
+            <Route path={routes.descubrir}>
+            <Header menu={menu} handleMenu={handleMenu} />  
+            <Descubrir />
+            <Footer />
             </Route>
           )}
 

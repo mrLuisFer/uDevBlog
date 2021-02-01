@@ -1,6 +1,6 @@
 // import react from 'react'
-import {Link } from 'react-router-dom'
-import routes from '../../routes/routes'
+import { Link } from 'react-router-dom';
+import { routes } from '../../routes/routes';
 
 export default function SimpleFooter() {
   return (
