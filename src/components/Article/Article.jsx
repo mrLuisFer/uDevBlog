@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 // Routes
 import { routes } from '../../routes/routes';
-// Components 
-import SimpleFooter from '../SimpleFooter/SimpleFooter.jsx'
+// Components
+import SimpleFooter from '../SimpleFooter/SimpleFooter.jsx';
 
 export default function Article() {
   const [article, setArticle] = useState('');
@@ -44,7 +44,7 @@ export default function Article() {
           <Link to={routes.home}>Vayamos devuelta a casa</Link>
         </div>
       )}
-    <SimpleFooter />
+      <SimpleFooter />
     </>
   );
 }
