@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import ApiNewsCard from './ApiNewsCard/ApiNewsCard';
+import { bounceIn } from '../../utils/animateCss/index';
 
 export default function GetApiNews() {
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showDetail, setShowDetail] = useState(false);
 
   const gettingInfo = async () => {
     const res = await fetch(
@@ -30,20 +32,49 @@ export default function GetApiNews() {
 
   console.log(apiData);
 
+  const handleShowDetail = () => {
+    setShowDetail(!showDetail);
+  };
+
   return (
-    <div className='GetApiNews'>
+    <div>
       {loading ? (
         <div className='loader'>Loading...</div>
       ) : (
-        <div>
-          {apiData.map((news, i) => (
-            <ApiNewsCard
-              key={i}
-              title={news.title}
-              description={news.description}
-              link={news.link}
-            />
-          ))}
+        <div className='GetApiNews'>
+          <div
+            className='GetApiNews__detailContainer'
+            onClick={handleShowDetail}
+          >
+            <h3 className='GetApiNews__detailContainer-title'>
+              <i
+                className='fas fa-caret-right'
+                id={showDetail ? 'rotate' : ''}
+              ></i>
+              More details
+            </h3>
+            {showDetail ? (
+              <p className={bounceIn + ' GetApiNews__detailContainer-text'}>
+                Esta es una api que podiamos utilizar para mostrar noticias
+                acerca del mundo de la programacion o cualquier tema :D
+                <span>
+                  <i className='fas fa-rocket'></i>Powered by RapidApi
+                </span>
+              </p>
+            ) : (
+              ''
+            )}
+          </div>
+          <div className='GetApiNews__flex'>
+            {apiData.map((news, i) => (
+              <ApiNewsCard
+                key={i}
+                title={news.title}
+                description={news.description}
+                link={news.link}
+              />
+            ))}
+          </div>
         </div>
       )}
     </div>
