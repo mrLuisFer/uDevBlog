@@ -1,3 +1,8 @@
 .Descubrir {
   padding: 0 5%;
+
+  @media (min-width: $large) {
+    padding: 0 3%;
+    padding-top: 3rem;
+  }
 }

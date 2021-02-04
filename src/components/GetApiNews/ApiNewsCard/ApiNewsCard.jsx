@@ -2,7 +2,7 @@
 
 export default function ApiNewsCard({ title, description, link }) {
   return (
-    <div className='ApiNewsCard'>
+    <article className='ApiNewsCard'>
       <h3 className='ApiNewsCard__title'>{title}</h3>
       <div className='ApiNewsCard__line'></div>
       <p className='ApiNewsCard__content'>
@@ -25,6 +25,6 @@ export default function ApiNewsCard({ title, description, link }) {
       ) : (
         ''
       )}
-    </div>
+    </article>
   );
 }

@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import ApiNewsCard from './ApiNewsCard/ApiNewsCard';
-import { bounceIn } from '../../utils/animateCss/index';
 
-export default function GetApiNews() {
+export default function GetApiNew() {
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showDetail, setShowDetail] = useState(false);
@@ -39,7 +38,9 @@ export default function GetApiNews() {
   return (
     <div>
       {loading ? (
-        <div className='loader'>Loading...</div>
+        <div className='loader__height'>
+          <div className='loader'>Loading...</div>
+        </div>
       ) : (
         <div className='GetApiNews'>
           <div
@@ -54,7 +55,7 @@ export default function GetApiNews() {
               More details
             </h3>
             {showDetail ? (
-              <p className={bounceIn + ' GetApiNews__detailContainer-text'}>
+              <p className='GetApiNews__detailContainer-text'>
                 Esta es una api que podiamos utilizar para mostrar noticias
                 acerca del mundo de la programacion o cualquier tema :D
                 <span>
