@@ -1,0 +1,49 @@
+.ApiNewsDetail__detailContainer {
+  color: var(--secundario);
+  background: rgba(208, 217, 226, 0.4);
+  display: inline-block;
+  padding: 0.7rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  @include no-select;
+
+  &-title {
+    cursor: pointer;
+    font-size: 0.9rem;
+
+    @media (min-width: $large) {
+      font-size: 1.3rem;
+    }
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-text {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    max-width: 280px;
+    color: var(--principal);
+
+    @media (min-width: $large) {
+      font-size: 1rem;
+      max-width: 320px;
+    }
+
+    span {
+      margin-top: 0.7rem;
+      display: block;
+      font-weight: 300;
+      opacity: 0.8;
+      transition: var(--transition);
+
+      i {
+        margin-right: 0.4rem;
+        transition: var(--transition);
+      }
+    }
+  }
+}
