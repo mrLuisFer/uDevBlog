@@ -7,15 +7,18 @@
   // En caso sea necesario cambiar un color lo haremos desde la variable manualmente pero revisando que no afecte
   // a otros estilos
   --white: #fdfdfd;
+  --grey: #d0d9e2;
   --dark: #141313;
+  --dark-grey: #393e46;
 
   --shadow-color: rgba(59, 35, 35, 0.4);
 
   // new Palette
-  --principal: #071e3d;
-  --secundario: #001c55;
-  --secundario-2: #1c3684;
-  --terciario: #0c97f2;
+  --principal: #011d41;
+  --secundario: #00246d;
+  --secundario-light: #012f8b;
+  --secundario-2: #0830a8;
+  --terciario: #0097fb;
   --terciario-2: #abe7ef;
 
   // Font Families
@@ -26,8 +29,8 @@
   // @weights: family=Poppins:100;200;300;400;500;600;700;800
 
   // CSS properties
-  --transition: 0.2s cubic-bezier(0.49, 0.28, 0.78, 0.79);
-  --radius: 9px;
+  --transition: 0.2s ease-out;
+  --radius: 10px;
   --border-invisible: 1px solid rgba(0, 0, 0, 0);
 }
 

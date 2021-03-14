@@ -206,6 +206,7 @@
       transition: var(--transition);
       font-weight: 500;
       @include no-select;
+      outline: none;
 
       @media (min-width: $ipad) {
         max-width: 17rem;
@@ -261,13 +262,12 @@
     a {
       color: var(--principal);
       text-decoration: none;
-      border: var(--border-invisible);
       font-weight: 300;
       font-size: 0.9rem;
 
       &:hover {
         color: var(--secundario);
-        border-bottom: 1px solid var(--terciario);
+        @include text-underline(var(--terciario));
       }
 
       @media (min-width: $large) {
@@ -275,8 +275,8 @@
         border: none;
 
         &:hover {
-          text-decoration: underline;
           border: none;
+          @include text-underline(var(--terciario));
         }
       }
 

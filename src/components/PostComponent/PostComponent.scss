@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   width: 100%;
-  box-shadow: 0px 1px 7px var(--shadow-color);
+  box-shadow: 0 .5px 2px var(--shadow-color);
   border-radius: var(--radius);
   height: 11.2rem;
+  transition: var(--transition);
 
   @media (min-width: $ipad) {
     flex-direction: row;
@@ -18,6 +19,10 @@
   @media (min-width: $large) {
     width: auto;
     // width: 350px;
+  }
+
+  &:hover {
+    box-shadow: 1px 2px 8px var(--shadow-color);
   }
 
   // imagen del post
@@ -46,6 +51,7 @@
 
     @media (min-width: $ipad) {
       padding: 1.5rem;
+      width: 100%;
     }
 
     &-title {
@@ -57,6 +63,11 @@
       @media (min-width: $ipad) {
         font-size: 1.5rem;
         margin-bottom: 1.1rem;
+      }
+
+      &:hover {
+        @include text-underline(var(--secundario));
+        cursor: pointer;
       }
     }
 

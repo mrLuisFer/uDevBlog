@@ -1,19 +1,21 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 // Assets
 import welcomeBlogPost from '../assets/welcome-illustration/welcome-blog-post.svg';
 // Utils
-import {fadeInUp} from '../utils/animateCss';
+import { fadeInUp } from '../utils/animateCss';
+// Routes
+import { routes } from '../routes/routes';
 
 export default function WelcomeView() {
   let history = useHistory();
 
   const pushToHome = () => {
-    history.push('/home');
+    history.push(`${routes.home}`);
   };
 
   return (
-    <div className='WelcomeView'>
+    <section className='WelcomeView'>
       <div className='WelcomeView__hero-illustration-div'>
         {/* Hero illustration */}
         <img
@@ -52,14 +54,17 @@ export default function WelcomeView() {
           >
             Repositorio
           </a>
-          <a className='WelcomeView__links-div__link' href='/'>
+          <Link
+            className='WelcomeView__links-div__link'
+            to={routes.comunidades}
+          >
             Conocer Mas
-          </a>
-          <a className='WelcomeView__links-div__link' href='/'>
+          </Link>
+          <Link className='WelcomeView__links-div__link' to={routes.about}>
             Integrantes
-          </a>
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

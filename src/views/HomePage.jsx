@@ -5,8 +5,8 @@ import HomePosts from '../components/HomePosts/HomePosts';
 
 export default function HomePage() {
   return (
-    <div className='HomePage'>
+    <section className='HomePage'>
       <HomePosts />
-    </div>
+    </section>
   );
 }

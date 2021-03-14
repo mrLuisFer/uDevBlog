@@ -1,0 +1,87 @@
+.Article {
+  padding: 5%;
+
+  &__title {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+
+  &__container {
+    
+    @media (min-width: $large){
+      max-width: 1000px;
+     //  margin: 0 auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--principal);
+      font-size: 1.1rem;
+      transition: var(--transition);
+      font-weight: 500;
+      @include no-select;
+
+      @media (min-width: $ipad) {
+        font-size: 1.3rem;
+      }
+
+      i {
+        margin-right: 1rem;
+      }
+
+      &:hover {
+        color: var(--terciario);
+      }
+    }
+
+    &__line {
+      height: 7px;
+      width: 100px;
+      border-radius: var(--radius);
+      background: var(--principal);
+      margin-top: 0.5rem;
+      transition: var(--transition);
+
+      @media (min-width: $large) {
+        width: 90px;
+      }
+
+      &:hover {
+        background: var(--secundario);
+      }
+    }
+
+    &__content {
+      margin-top: 1.5rem;
+      color: var(--dark);
+      line-height: 1.5;
+      font-size: 1rem;
+
+      h1 {
+        color: var(--principal);
+        font-size: 1.1rem;
+      }
+
+      code {
+        padding: 2rem 1rem;
+        margin: 0.5rem;
+        background: var(--dark-grey);
+      }
+
+      img {
+        margin: 2rem auto;
+        width: 300px;
+        display: block;
+
+        @media (min-width: $large) {
+          width: 600px;
+        }
+      }
+
+      p {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

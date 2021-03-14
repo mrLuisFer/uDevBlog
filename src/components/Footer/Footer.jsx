@@ -1,12 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // Assests
 import logoHorizontal from '../../assets/logo/logoHorizontal.svg';
+// Routes
+import { routes } from '../../routes/routes';
 
 export default function Footer() {
   return (
     <footer className='Footer'>
-      <Link to='/home' className='Footer__link'>
+      <Link to={routes.home} className='Footer__link'>
         <img
           src={logoHorizontal}
           alt='logoHorizontal'

@@ -1,0 +1,24 @@
+/*
+  Este es el scroll perzonalizado que se modifica
+*/
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: var(--radius);
+  background: var(--dark-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: var(--radius);
+  background: var(--terciario);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terciario);
+}

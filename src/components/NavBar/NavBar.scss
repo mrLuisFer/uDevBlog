@@ -16,6 +16,10 @@
 
       @media (min-width: $ipad) {
         height: 70px;
+
+        &:hover {
+          transform: scale(1.02);
+        }
       }
 
       @media (min-width: $large) {
@@ -37,6 +41,10 @@
     @media (min-width: $ipad) {
       font-size: 1.5rem;
       margin-right: 0;
+    }
+
+    @media (min-width: 900px) {
+      display: none;
     }
   }
 }

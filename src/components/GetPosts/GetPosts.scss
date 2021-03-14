@@ -1,0 +1,23 @@
+.GetPosts {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+
+  @media (min-width: $large) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: space-between;
+    column-gap: 2rem;
+    row-gap: 5rem;
+  }
+
+  @media (min-width: $laptop) {
+    grid-template-columns: repeat(2, 420px);
+    justify-content: space-around;
+    column-gap: 4rem;
+    margin: 0 auto;
+  }
+}
